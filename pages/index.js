@@ -1,4 +1,4 @@
-import { Sildebar, Navbar, About, Resume, Portfolio } from '../components'
+import { Sildebar, Navbar, About, Resume, Portfolio, Blog } from '../components'
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
         <About />
         <Resume />
         <Portfolio />
+        <Blog />
       </div>
     </>
   )
