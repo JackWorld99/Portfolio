@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 const Blog = () => {
     return (
         <article className="blog" data-page="blog">
@@ -11,7 +9,7 @@ const Blog = () => {
                     <li className="blog-post-item">
                         <a href="#">
                             <figure className="blog-banner-box">
-                                <Image src="/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy" />
+                                <img src="/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy" />
                             </figure>
                             <div className="blog-content">
                                 <div className="blog-meta">
@@ -30,7 +28,7 @@ const Blog = () => {
                     <li className="blog-post-item">
                         <a href="#">
                             <figure className="blog-banner-box">
-                                <Image src="/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy" />
+                                <img src="/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy" />
                             </figure>
                             <div className="blog-content">
                                 <div className="blog-meta">
@@ -49,7 +47,7 @@ const Blog = () => {
                     <li className="blog-post-item">
                         <a href="#">
                             <figure className="blog-banner-box">
-                                <Image src="/images/blog-3.jpg" alt="Design digest #80" loading="lazy" />
+                                <img src="/images/blog-3.jpg" alt="Design digest #80" loading="lazy" />
                             </figure>
                             <div className="blog-content">
                                 <div className="blog-meta">
@@ -68,7 +66,7 @@ const Blog = () => {
                     <li className="blog-post-item">
                         <a href="#">
                             <figure className="blog-banner-box">
-                                <Image src="/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy" />
+                                <img src="/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy" />
                             </figure>
                             <div className="blog-content">
                                 <div className="blog-meta">
@@ -87,7 +85,7 @@ const Blog = () => {
                     <li className="blog-post-item">
                         <a href="#">
                             <figure className="blog-banner-box">
-                                <Image src="/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy" />
+                                <img src="/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy" />
                             </figure>
                             <div className="blog-content">
                                 <div className="blog-meta">
@@ -106,7 +104,7 @@ const Blog = () => {
                     <li className="blog-post-item">
                         <a href="#">
                             <figure className="blog-banner-box">
-                                <Image src="/images/blog-6.jpg" alt="Design digest #79" loading="lazy" />
+                                <img src="/images/blog-6.jpg" alt="Design digest #79" loading="lazy" />
                             </figure>
                             <div className="blog-content">
                                 <div className="blog-meta">

@@ -1,3 +1,6 @@
+// import { IonIcon } from '@ionic/react'
+// import { paperPlane } from 'ionicons'
+
 const Contact = () => {
     return (
         <article className="contact" data-page="contact">
@@ -20,7 +23,7 @@ const Contact = () => {
                     </div>
                     <textarea name="message" className="form-input" placeholder="Your Message" required data-form-input></textarea>
                     <button className="form-btn" type="submit" disabled data-form-btn>
-                        <ion-icon name="paper-plane"></ion-icon>
+                        {/* <IonIcon icon={paperPlane} /> */}
                         <span>Send Message</span>
                     </button>
                 </form>
