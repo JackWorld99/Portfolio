@@ -1,5 +1,4 @@
-// import { IonIcon } from '@ionic/react'
-// import { bookOutline } from 'ionicons'
+import { IoBookOutline } from "react-icons/io5"
 
 const Resume = () => {
     return (
@@ -11,7 +10,7 @@ const Resume = () => {
             <section className="timeline">
                 <div className="title-wrapper">
                     <div className="icon-box">
-                        {/* <IonIcon icon={bookOutline} /> */}
+                        <IoBookOutline className="ion-icon"/>
                     </div>
                     <h3 className="h3">Education</h3>
                 </div>
@@ -48,7 +47,7 @@ const Resume = () => {
             <section className="timeline">
                 <div className="title-wrapper">
                     <div className="icon-box">
-                        {/* <IonIcon icon={bookOutline} /> */}
+                        <IoBookOutline className="ion-icon"/>
                     </div>
                     <h3 className="h3">Experience</h3>
                 </div>

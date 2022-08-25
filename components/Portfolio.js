@@ -1,5 +1,4 @@
-// import { IonIcon } from '@ionic/react'
-// import { chevronDown, eyeOutline } from 'ionicons'
+import { IoChevronDown, IoEyeOutline } from "react-icons/io5"
 
 const Portfolio = () => {
     return (
@@ -27,7 +26,7 @@ const Portfolio = () => {
                     <button className="filter-select" data-select>
                         <div className="select-value" data-selecct-value>Select category</div>
                         <div className="select-icon">
-                            {/* <IonIcon icon={chevronDown} /> */}
+                            <IoChevronDown className="ion-icon"/>
                         </div>
                     </button>
 
@@ -52,9 +51,9 @@ const Portfolio = () => {
                         <a href="#">
                             <figure className="project-img">
                                 <div className="project-item-icon-box">
-                                    {/* <IonIcon icon={eyeOutline} /> */}
+                                    <IoEyeOutline className="ion-icon"/>
                                 </div>
-                                <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy" />
+                                <img src="/images/project-1.jpg" alt="finance" loading="lazy" />
                             </figure>
                             <h3 className="project-title">Finance</h3>
                             <p className="project-category">Web development</p>
@@ -65,9 +64,9 @@ const Portfolio = () => {
                         <a href="#">
                             <figure className="project-img">
                                 <div className="project-item-icon-box">
-                                    {/* <IonIcon icon={eyeOutline} /> */}
+                                    <IoEyeOutline className="ion-icon"/>
                                 </div>
-                                <img src="./assets/images/project-2.png" alt="orizon" loading="lazy" />
+                                <img src="/images/project-2.png" alt="orizon" loading="lazy" />
                             </figure>
                             <h3 className="project-title">Orizon</h3>
                             <p className="project-category">Web development</p>
@@ -78,9 +77,9 @@ const Portfolio = () => {
                         <a href="#">
                             <figure className="project-img">
                                 <div className="project-item-icon-box">
-                                    {/* <IonIcon icon={eyeOutline} /> */}
+                                    <IoEyeOutline className="ion-icon"/>
                                 </div>
-                                <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy" />
+                                <img src="/images/project-3.jpg" alt="fundo" loading="lazy" />
                             </figure>
                             <h3 className="project-title">Fundo</h3>
                             <p className="project-category">Web design</p>
@@ -91,9 +90,9 @@ const Portfolio = () => {
                         <a href="#">
                             <figure className="project-img">
                                 <div className="project-item-icon-box">
-                                    {/* <IonIcon icon={eyeOutline} /> */}
+                                    <IoEyeOutline className="ion-icon"/>
                                 </div>
-                                <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy" />
+                                <img src="/images/project-4.png" alt="brawlhalla" loading="lazy" />
                             </figure>
                             <h3 className="project-title">Brawlhalla</h3>
                             <p className="project-category">Applications</p>
@@ -104,9 +103,9 @@ const Portfolio = () => {
                         <a href="#">
                             <figure className="project-img">
                                 <div className="project-item-icon-box">
-                                    {/* <IonIcon icon={eyeOutline} /> */}
+                                    <IoEyeOutline className="ion-icon"/>
                                 </div>
-                                <img src="./assets/images/project-5.png" alt="dsm." loading="lazy" />
+                                <img src="/images/project-5.png" alt="dsm." loading="lazy" />
                             </figure>
                             <h3 className="project-title">DSM.</h3>
                             <p className="project-category">Web design</p>
@@ -117,9 +116,9 @@ const Portfolio = () => {
                         <a href="#">
                             <figure className="project-img">
                                 <div className="project-item-icon-box">
-                                    {/* <IonIcon icon={eyeOutline} /> */}
+                                    <IoEyeOutline className="ion-icon"/>
                                 </div>
-                                <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy" />
+                                <img src="/images/project-6.png" alt="metaspark" loading="lazy" />
                             </figure>
                             <h3 className="project-title">MetaSpark</h3>
                             <p className="project-category">Web design</p>
@@ -130,9 +129,9 @@ const Portfolio = () => {
                         <a href="#">
                             <figure className="project-img">
                                 <div className="project-item-icon-box">
-                                    {/* <IonIcon icon={eyeOutline} /> */}
+                                    <IoEyeOutline className="ion-icon"/>
                                 </div>
-                                <img src="./assets/images/project-7.png" alt="summary" loading="lazy" />
+                                <img src="/images/project-7.png" alt="summary" loading="lazy" />
                             </figure>
                             <h3 className="project-title">Summary</h3>
                             <p className="project-category">Web development</p>
@@ -143,9 +142,9 @@ const Portfolio = () => {
                         <a href="#">
                             <figure className="project-img">
                                 <div className="project-item-icon-box">
-                                    {/* <IonIcon icon={eyeOutline} /> */}
+                                    <IoEyeOutline className="ion-icon"/>
                                 </div>
-                                <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy" />
+                                <img src="/images/project-8.jpg" alt="task manager" loading="lazy" />
                             </figure>
                             <h3 className="project-title">Task Manager</h3>
                             <p className="project-category">Applications</p>
@@ -156,9 +155,9 @@ const Portfolio = () => {
                         <a href="#">
                             <figure className="project-img">
                                 <div className="project-item-icon-box">
-                                    {/* <IonIcon icon={eyeOutline} /> */}
+                                    <IoEyeOutline className="ion-icon"/>
                                 </div>
-                                <img src="./assets/images/project-9.png" alt="arrival" loading="lazy" />
+                                <img src="/images/project-9.png" alt="arrival" loading="lazy" />
                             </figure>
                             <h3 className="project-title">Arrival</h3>
                             <p className="project-category">Web development</p>

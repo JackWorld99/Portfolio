@@ -1,5 +1,4 @@
-// import { IonIcon } from '@ionic/react'
-// import { closeOutline } from 'ionicons'
+import { IoCloseOutline } from "react-icons/io5"
 
 const About = () => {
     return (
@@ -147,7 +146,7 @@ const About = () => {
                 <div className="overlay" data-overlay></div>
                 <section className="testimonials-modal">
                     <button className="modal-close-btn" data-modal-close-btn>
-                        {/* <IonIcon icon={closeOutline} /> */}
+                        <IoCloseOutline className="ion-icon"/>
                     </button>
                     <div className="modal-img-wrapper">
                         <figure className="modal-avatar-box">

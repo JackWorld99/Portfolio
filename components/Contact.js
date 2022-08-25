@@ -1,5 +1,4 @@
-// import { IonIcon } from '@ionic/react'
-// import { paperPlane } from 'ionicons'
+import { IoPaperPlane } from "react-icons/io5"
 
 const Contact = () => {
     return (
@@ -23,7 +22,7 @@ const Contact = () => {
                     </div>
                     <textarea name="message" className="form-input" placeholder="Your Message" required data-form-input></textarea>
                     <button className="form-btn" type="submit" disabled data-form-btn>
-                        {/* <IonIcon icon={paperPlane} /> */}
+                        <IoPaperPlane className="ion-icon"/>
                         <span>Send Message</span>
                     </button>
                 </form>

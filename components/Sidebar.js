@@ -1,5 +1,4 @@
-// import { IonIcon } from '@ionic/react'
-// import { chevronDown, mailOutline, phonePortraitOutline, calendarOutline, locationOutline, logoFacebook, logoTwitter, logoInstagram } from 'ionicons'
+import { IoChevronDown, IoMailOutline, IoPhonePortraitOutline, IoCalendarOutline, IoLocationOutline, IoLogoFacebook, IoLogoTwitter, IoLogoInstagram } from "react-icons/io5"
 
 const Sidebar = () => {
     return (
@@ -14,7 +13,7 @@ const Sidebar = () => {
                 </div>
                 <button className="info_more-btn" data-sidebar-btn>
                     <span>Show Contacts</span>
-                    {/* <IonIcon icon={chevronDown} /> */}
+                    <IoChevronDown className="ion-icon"/>
                 </button>
             </div>
             <div className="sidebar-info_more">
@@ -22,7 +21,7 @@ const Sidebar = () => {
                 <ul className="contacts-list">
                     <li className="contact-item">
                         <div className="icon-box">
-                            {/* <IonIcon icon={mailOutline} /> */}
+                            <IoMailOutline className="ion-icon"/>
                         </div>
                         <div className="contact-info">
                             <p className="contact-title">Email</p>
@@ -31,7 +30,7 @@ const Sidebar = () => {
                     </li>
                     <li className="contact-item">
                         <div className="icon-box">
-                            {/* <IonIcon icon={phonePortraitOutline} /> */}
+                            <IoPhonePortraitOutline className="ion-icon"/>
                         </div>
                         <div className="contact-info">
                             <p className="contact-title">Phone</p>
@@ -40,7 +39,7 @@ const Sidebar = () => {
                     </li>
                     <li className="contact-item">
                         <div className="icon-box">
-                            {/* <IonIcon icon={calendarOutline} /> */}
+                            <IoCalendarOutline className="ion-icon"/>
                         </div>
                         <div className="contact-info">
                             <p className="contact-title">Birthday</p>
@@ -49,7 +48,7 @@ const Sidebar = () => {
                     </li>
                     <li className="contact-item">
                         <div className="icon-box">
-                            {/* <IonIcon icon={locationOutline} /> */}
+                            <IoLocationOutline className="ion-icon"/>
                         </div>
                         <div className="contact-info">
                             <p className="contact-title">Location</p>
@@ -61,17 +60,17 @@ const Sidebar = () => {
                 <ul className="social-list">
                     <li className="social-item">
                         <a href="#" className="social-link">
-                            {/* <IonIcon icon={logoFacebook} /> */}
+                            <IoLogoFacebook className="ion-icon"/>
                         </a>
                     </li>
                     <li className="social-item">
                         <a href="#" className="social-link">
-                            {/* <IonIcon icon={logoTwitter} /> */}
+                            <IoLogoTwitter className="ion-icon"/>
                         </a>
                     </li>
                     <li className="social-item">
                         <a href="#" className="social-link">
-                            {/* <IonIcon icon={logoInstagram} /> */}
+                            <IoLogoInstagram className="ion-icon"/>
                         </a>
                     </li>
                 </ul>
