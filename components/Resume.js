@@ -1,8 +1,11 @@
 import { IoBookOutline } from "react-icons/io5"
+import { useStateContext } from "../context/StateContext"
 
 const Resume = () => {
+    const {page} = useStateContext()
+
     return (
-        <article className="resume" data-page="resume">
+        <article className={`resume ${page === "resume" ? "active" : ""}`}>
             <header>
                 <h2 className="h2 article-title">Resume</h2>
             </header>

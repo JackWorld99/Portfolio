@@ -1,6 +1,10 @@
+import { useStateContext } from "../context/StateContext"
+
 const Blog = () => {
+    const {page} = useStateContext()
+
     return (
-        <article className="blog" data-page="blog">
+        <article className={`blog ${page === "blog" ? "active" : ""}`}>
             <header>
                 <h2 className="h2 article-title">Blog</h2>
             </header>

@@ -1,8 +1,11 @@
 import { IoChevronDown, IoEyeOutline } from "react-icons/io5"
+import { useStateContext } from "../context/StateContext"
 
 const Portfolio = () => {
+    const {page} = useStateContext()
+    
     return (
-        <article className="portfolio" data-page="portfolio">
+        <article className={`portfolio ${page === "portfolio" ? "active" : ""}`}>
             <header>
                 <h2 className="h2 article-title">Portfolio</h2>
             </header>

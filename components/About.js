@@ -1,8 +1,11 @@
 import { IoCloseOutline } from "react-icons/io5"
+import { useStateContext } from "../context/StateContext"
 
 const About = () => {
+    const {page} = useStateContext()
+
     return (
-        <article className="about active" data-page="about">
+        <article className={`about ${page === "about" ? "active" : ""}`}>
             <header>
                 <h2 className="h2 article-title">About me</h2>
             </header>

@@ -1,8 +1,11 @@
 import { IoPaperPlane } from "react-icons/io5"
+import { useStateContext } from "../context/StateContext"
 
 const Contact = () => {
+    const {page} = useStateContext()
+
     return (
-        <article className="contact" data-page="contact">
+        <article className={`contact ${page === "contact" ? "active" : ""}`}>
             <header>
                 <h2 className="h2 article-title">Contact</h2>
             </header>
