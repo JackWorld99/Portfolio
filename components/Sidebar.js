@@ -1,8 +1,11 @@
+import React, { useState } from "react"
 import { IoChevronDown, IoMailOutline, IoPhonePortraitOutline, IoCalendarOutline, IoLocationOutline, IoLogoFacebook, IoLogoTwitter, IoLogoInstagram } from "react-icons/io5"
 
 const Sidebar = () => {
-    return (
-        <aside className="sidebar" data-sidebar>
+    const [click, setClick] = useState(false)
+
+    return ( 
+        <aside className={`sidebar ${click ? "active" : ""}`}>
             <div className="sidebar-info">
                 <figure className="avatar-box">
                     <img src="/images/my-avatar.png" alt="xxx" width="80" />
@@ -11,7 +14,7 @@ const Sidebar = () => {
                     <h1 className="name" title="xxx">xxx</h1>
                     <p className="title">Web developer</p>
                 </div>
-                <button className="info_more-btn" data-sidebar-btn>
+                <button className="info_more-btn" onClick={() => setClick(!click)}>
                     <span>Show Contacts</span>
                     <IoChevronDown className="ion-icon"/>
                 </button>

@@ -1,9 +1,9 @@
-import { Sildebar, Navbar, About, Resume, Portfolio, Blog, Contact } from '../components'
+import { Sidebar, Navbar, About, Resume, Portfolio, Blog, Contact } from '../components'
 
-export default function Home() {
+const Home = () => {
   return (
     <>
-      <Sildebar />
+      <Sidebar />
 
       <div className="main-content">
         <Navbar />
@@ -16,3 +16,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home
