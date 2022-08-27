@@ -4,7 +4,7 @@ import { useStateContext } from "../context/StateContext"
 
 const Portfolio = () => {
     const projectCategory = [{id: 1, name: "All"},{id: 2,name: "Web Design"}, {id: 3, name: "Applications"}, {id: 4, name: "Web Development"}]
-    const projectList = [
+    const [projects, setProjects] = useState([
         {id: 1, name: "Finance", category: "Web Development", image:"project-1.jpg", show: true},
         {id: 2, name: "Orizon", category: "Web Development", image:"project-2.png", show: true},
         {id: 3, name: "Fundo", category: "Web Design", image:"project-3.jpg", show: true},
@@ -14,12 +14,10 @@ const Portfolio = () => {
         {id: 7, name: "Summary", category: "Web Development", image:"project-7.png", show: true},
         {id: 8, name: "Task Manager", category: "Applications", image:"project-8.jpg", show: true},
         {id: 9, name: "Arrival", category: "Web Development", image:"project-9.png", show: true},
-    ]
-
+    ])
     const [click, setClick] = useState(false)
-    const [select, setSelect] = useState("Select category")
+    const [selectValue, setSelectValue] = useState("Select category")
     const [clickColor, setClickColor] = useState("All")
-    const [projects, setProjects] = useState(projectList)
     const {page} = useStateContext()
     
 
@@ -27,7 +25,7 @@ const Portfolio = () => {
         const selectedCategory = e.target.innerText
         setClick(false)
         setClickColor(selectedCategory)
-        setSelect(selectedCategory)
+        setSelectValue(selectedCategory)
         setProjects(projects.map(project => (selectedCategory === "All" || project.category === selectedCategory) ? {...project, show: true } : {...project, show: false }))
     }
 
@@ -45,9 +43,9 @@ const Portfolio = () => {
                     ))}
                 </ul>
 
-                <div className="filter-select-box">-
+                <div className="filter-select-box">
                     <button className={`filter-select ${click ? "active" : ""}`} onClick={() => setClick(!click)}>
-                        <div className="select-value">{select}</div>
+                        <div className="select-value">{selectValue}</div>
                         <div className="select-icon">
                             <IoChevronDown className="ion-icon"/>
                         </div>
