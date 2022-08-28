@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "disposable-email": "^0.2.3",
+    "mailchecker": "^5.0.0",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "react-toastify": "^9.0.8",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "eslint": "8.22.0",
