@@ -1,8 +1,30 @@
+import React, {useRef, useState} from "react"
 import { IoCloseOutline } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
 
 const About = () => {
     const {page} = useStateContext()
+    const [toggleModal, setToggleModal] = useState(false)
+    const [overlayModal, setOverlayModal] = useState(false)
+    const imgRef = useRef() 
+    const titleRef = useRef()
+    const textRef = useRef()
+    const testimonialsImgRef = useRef() 
+    const testimonialsTitleRef = useRef()
+    const testimonialsTextRef = useRef()
+   
+    const handleClick = () => {
+        imgRef.current.src = testimonialsImgRef.current.src
+        imgRef.current.alt = testimonialsImgRef.current.alt
+        titleRef.current.innerHTML = testimonialsTitleRef.current.innerHTML
+        textRef.current.innerHTML = testimonialsTextRef.current.innerHTML
+        modal()
+    }
+
+    const modal = () => {
+        setToggleModal(!toggleModal)
+        setOverlayModal(!overlayModal)
+    }
 
     return (
         <article className={`about ${page === "about" ? "active" : ""}`}>
@@ -76,12 +98,12 @@ const About = () => {
                 <h3 className="h3 testimonials-title">Testimonials</h3>
                 <ul className="testimonials-list has-scrollbar">
                     <li className="testimonials-item">
-                        <div className="content-card" data-testimonials-item>
+                        <div className="content-card" onClick={handleClick}>
                             <figure className="testimonials-avatar-box">
-                                <img src="/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar />
+                                <img ref={testimonialsImgRef} src="/images/avatar-1.png" alt="Daniel lewis" width="60" />
                             </figure>
-                            <h4 className="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-                            <div className="testimonials-text" data-testimonials-text>
+                            <h4 className="h4 testimonials-item-title" ref={testimonialsTitleRef} >Daniel lewis</h4>
+                            <div className="testimonials-text" ref={testimonialsTextRef} >
                                 <p>
                                     Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                                     lot of experience
@@ -93,12 +115,12 @@ const About = () => {
                         </div>
                     </li>
                     <li className="testimonials-item">
-                        <div className="content-card" data-testimonials-item>
+                        <div className="content-card" onClick={handleClick}>
                             <figure className="testimonials-avatar-box">
-                                <img src="/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar />
+                                <img src="/images/avatar-2.png" alt="Jessica miller" width="60" />
                             </figure>
-                            <h4 className="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-                            <div className="testimonials-text" data-testimonials-text>
+                            <h4 className="h4 testimonials-item-title" ref={testimonialsTitleRef} >Jessica miller</h4>
+                            <div className="testimonials-text" ref={testimonialsTextRef} >
                                 <p>
                                     Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                                     lot of experience
@@ -110,12 +132,12 @@ const About = () => {
                         </div>
                     </li>
                     <li className="testimonials-item">
-                        <div className="content-card" data-testimonials-item>
+                        <div className="content-card" onClick={handleClick}> 
                             <figure className="testimonials-avatar-box">
-                                <img src="/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar />
+                                <img src="/images/avatar-3.png" alt="Emily evans" width="60" />
                             </figure>
-                            <h4 className="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-                            <div className="testimonials-text" data-testimonials-text>
+                            <h4 className="h4 testimonials-item-title" ref={testimonialsTitleRef} >Emily evans</h4>
+                            <div className="testimonials-text" ref={testimonialsTextRef} >
                                 <p>
                                     Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                                     lot of experience
@@ -127,12 +149,12 @@ const About = () => {
                         </div>
                     </li>
                     <li className="testimonials-item">
-                        <div className="content-card" data-testimonials-item>
+                        <div className="content-card" onClick={handleClick}>
                             <figure className="testimonials-avatar-box">
-                                <img src="/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar />
+                                <img src="/images/avatar-4.png" alt="Henry william" width="60" />
                             </figure>
-                            <h4 className="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-                            <div className="testimonials-text" data-testimonials-text>
+                            <h4 className="h4 testimonials-item-title" ref={testimonialsTitleRef} >Henry william</h4>
+                            <div className="testimonials-text" ref={testimonialsTextRef} >
                                 <p>
                                     Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                                     lot of experience
@@ -145,22 +167,22 @@ const About = () => {
                     </li>
                 </ul>
             </section>
-            <div className="modal-container" data-modal-container>
-                <div className="overlay" data-overlay></div>
+            <div className={`modal-container ${toggleModal ? "active" : ""}`} >
+                <div className={`overlay ${overlayModal ? "active" : ""}`} onClick={modal}></div>
                 <section className="testimonials-modal">
-                    <button className="modal-close-btn" data-modal-close-btn>
+                    <button className="modal-close-btn" onClick={modal}>
                         <IoCloseOutline className="ion-icon"/>
                     </button>
                     <div className="modal-img-wrapper">
                         <figure className="modal-avatar-box">
-                            <img src="/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+                            <img ref={imgRef} src="/images/avatar-1.png" alt="Daniel lewis" width="80" />
                         </figure>
                         <img src="/images/icon-quote.svg" alt="quote icon" />
                     </div>
                     <div className="modal-content">
-                        <h4 className="h3 modal-title" data-modal-title>Daniel lewis</h4>
+                        <h4 className="h3 modal-title" ref={titleRef} >Daniel lewis</h4>
                         <time dateTime="2021-06-14">14 June, 2021</time>
-                        <div data-modal-text>
+                        <div ref={textRef}>
                             <p>
                                 Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                                 lot of experience
