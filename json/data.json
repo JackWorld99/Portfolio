@@ -1,0 +1,210 @@
+[
+   {
+      "id": 1,
+      "name": "Canvas Clock",
+      "url": "https://github.com/JackWorld99/Canvas-Clock",
+      "description": "Build an analog clock using HTML Canvas.",
+      "img": "Canvas Clock.gif",
+      "category": "Vanilla HTML"
+   },
+   {
+      "id": 2,
+      "name": "Currency Converter",
+      "url": "https://github.com/JackWorld99/Currency-Converter",
+      "description": "A Currency Converter with HTML CSS and JavaScript. Swap or reverse the two currencies easily by clicking on the exchange icon.",
+      "img": "Currency Converter.gif",
+      "category": "Vanilla HTML"
+   },
+   {
+      "id": 3,
+      "name": "Ecommerce Sanity Stripe",
+      "url": "https://github.com/JackWorld99/Ecommerce-Sanity-Stripe",
+      "description": "This is an E-commerce application built with Nextjs, Sanity.io, and Stripe. A fully responsive Modern Full Stack Ecommerce application with cart and payments functionality. ",
+      "img": "Ecommerce Sanity Stripe.gif",
+      "category": "React"
+   },
+   {
+      "id": 4,
+      "name": "File Downloader",
+      "url": "https://github.com/JackWorld99/File-Downloader",
+      "description": " Build a file downloader with JavaScript able download image or video.",
+      "img": "File Downloader.gif",
+      "category": "Vanilla HTML"
+   },
+   {
+      "id": 5,
+      "name": "File Sharing With Password",
+      "url": "https://github.com/JackWorld99/File-Sharing-With-Password",
+      "description": "A File Sharing tools build with Node Node Js, Express and MongoDB. It's includes file sharing, password protected files and a download count tracker.The file can only open with the password you set.",
+      "img": "File Sharing With Password.gif",
+      "category": "NodeJS"
+   },
+   {
+      "id": 6,
+      "name": "Image Lazy Loading",
+      "url": "https://github.com/JackWorld99/Image-Lazy-Loading",
+      "description": "Lazy loading can occur on different moments in the application, but it typically happens on some user interactions such as scrolling and navigation.",
+      "img": "Image Lazy Loading.gif",
+      "category": "Vanilla HTML"
+   },
+   {
+      "id": 7,
+      "name": "JackWorld99",
+      "url": "https://github.com/JackWorld99/JackWorld99",
+      "description": "Hey I'm Jack, this is something about me.",
+      "img": "JackWorld99.gif",
+      "category": "Others"
+   },
+   {
+      "id": 8,
+      "name": "Laravel CRUD Role Permission",
+      "url": "https://github.com/JackWorld99/Laravel-CRUD-Role-Permission",
+      "description": "Build a task management application with roles and CRUD capabilities using the Laravel framework.",
+      "img": "Laravel CRUD Role Permission.png",
+      "category": "Laravel"
+   },
+   {
+      "id": 9,
+      "name": "Laravel Project Listing",
+      "url": "https://github.com/JackWorld99/Laravel-Project-Listing",
+      "description": "Laravel Project Listing",
+      "img": "Laravel Project Listing.svg",
+      "category": "Laravel"
+   },
+   {
+      "id": 10,
+      "name": "MERN Expense Tracker",
+      "url": "https://github.com/JackWorld99/MERN-Expense-Tracker",
+      "description": "Expense Tracker Appbuild with MERN Sack We Dvelopment Famework. It allows you to monitor and categorize different expenses or income.",
+      "img": "MERN Expense Tracker.gif",
+      "category": "React"
+   },
+   {
+      "id": 11,
+      "name": "Pattern program",
+      "url": "https://github.com/JackWorld99/Pattern-program",
+      "description": "Patterns consisting of numbers, alphabets or symbols in a particular form. ",
+      "img": "Pattern program.png",
+      "category": "Vanilla HTML"
+   },
+   {
+      "id": 12,
+      "name": "Puppeteer Book Library",
+      "url": "https://github.com/JackWorld99/Puppeteer-Book-Library",
+      "description": "Using a web automation tool -- 'Puppeteer' to find a book from an online book library.",
+      "img": "Puppeteer Book Library.gif",
+      "category": "NodeJS"
+   },
+   {
+      "id": 13,
+      "name": "PWA Offline Travel Navigation App",
+      "url": "https://github.com/JackWorld99/PWA-Offline-Travel-Navigation-App",
+      "description": "This app aims to provide a platform for travelers who are willing to travel to the 'Taman Sutera Utama' area",
+      "img": "PWA Offline Travel Navigation App.png",
+      "category": "Vanilla HTML"
+   },
+   {
+      "id": 14,
+      "name": "Python Flask CRUD CSV",
+      "url": "https://github.com/JackWorld99/Python-Flask-CRUD-CSV",
+      "description": "Python Flask Application with CRUD, import and export CSV file.",
+      "img": "Python Flask CRUD CSV.png",
+      "category": "Python"
+   },
+   {
+      "id": 15,
+      "name": "Python Tools",
+      "url": "https://github.com/JackWorld99/Python-Tools",
+      "description": "Python Gadget",
+      "img": "Python Tools.gif",
+      "category": "Python"
+   },
+   {
+      "id": 16,
+      "name": "Python Web Scraping Jobs",
+      "url": "https://github.com/JackWorld99/Python-Web-Scraping-Jobs",
+      "description": "Scrape jobs on recruitment website that match expected salaries, with pagination, extract job titles, salary, link, company and summaries from the site and save as a csv file for excel.",
+      "img": "Python Web Scraping Jobs.png",
+      "category": "Python"
+   },
+   {
+      "id": 17,
+      "name": "QR Code Generator",
+      "url": "https://github.com/JackWorld99/QR-Code-Generator",
+      "description": "Create a QR Code Generator with HTML CSS and JavaScript.",
+      "img": "QR Code Generator.gif",
+      "category": "Vanilla HTML"
+   },
+   {
+      "id": 18,
+      "name": "React Budget Planner",
+      "url": "https://github.com/JackWorld99/React-Budget-Planner",
+      "description": "Build with React, it's an application that helps you to know exactly where your money is being spent.",
+      "img": "React Budget Planner.gif",
+      "category": "React"
+   },
+   {
+      "id": 19,
+      "name": "React Cryptocurrency Price Tracker",
+      "url": "https://github.com/JackWorld99/React-Cryptocurrency-Price-Tracker",
+      "description": "A simple Cryptocurrency price tracker app using React, Next js and use a Crypto Api to get the data.",
+      "img": "React Cryptocurrency Price Tracker.gif",
+      "category": "React"
+   },
+   {
+      "id": 20,
+      "name": "React Travel Advisor",
+      "url": "https://github.com/JackWorld99/React-Travel-Advisor",
+      "description": "A Travel Companion Application with Geolocation, Google Maps API, Searching for places, Fetching restaurants, hotels and attractions based on location from specialized Rapid APIs and data filtering.",
+      "img": "React Travel Advisor.png",
+      "category": "React"
+   },
+   {
+      "id": 21,
+      "name": "Realtime Crypto",
+      "url": "https://github.com/JackWorld99/Realtime-Crypto",
+      "description": "Using javascript to get cryptocurrencies, real-time prices, volumes, trading pairs, crypto categories and crypto derivatives, and rank them in order.",
+      "img": "Realtime Crypto.gif",
+      "category": "Vanilla HTML"
+   },
+   {
+      "id": 22,
+      "name": "Snake Game",
+      "url": "https://github.com/JackWorld99/Snake-Game",
+      "description": "Build a simple snake game In JavaScript",
+      "img": "Snake Game.gif",
+      "category": "Vanilla HTML"
+   },
+   {
+      "id": 23,
+      "name": "Text To Speech Converter",
+      "url": "https://github.com/JackWorld99/Text-To-Speech-Converter",
+      "description": "A technology that converts text to voice. It could be used to create a voiceover for a video or to help people with visual problems to “read” texts.",
+      "img": "Text To Speech Converter.gif",
+      "category": "Vanilla HTML"
+   },
+   {
+      "id": 24,
+      "name": "To Do List",
+      "url": "https://github.com/JackWorld99/To-Do-List",
+      "description": "A tool act as a memory aid. Build a To Do List web app in HTML, CSS and JavaScript.",
+      "img": "To Do List.gif",
+      "category": "Vanilla HTML"
+   },
+   {
+      "id": 25,
+      "name": "URL Shortener",
+      "url": "https://github.com/JackWorld99/URL-Shortener",
+      "description": "Build a URL Shortener Service with Node.js/Express/MongoDB. a Uniform Resource Locator made substantially shorter and still direct to the required page.",
+      "img": "URL Shortener.gif",
+      "category": "NodeJS"
+   },
+   {
+      "id": 26,
+      "name": "Vue Weight Tracker",
+      "url": "https://github.com/JackWorld99/Vue-Weight-Tracker",
+      "description": "This is a weight tracker build with Vue js ,composition API and Vite. This weight tracker will assist you in weight control and helps you to lose weight or reach your weight goal. ",
+      "img": "Vue Weight Tracker.gif",
+      "category": "Vue"
+   }
+]
