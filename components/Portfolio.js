@@ -1,26 +1,30 @@
 import React, {useState } from "react"
+import useSWR from 'swr'
 import { IoChevronDown, IoEyeOutline } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
+const fetcher = (url) => fetch(url).then((res) => res.json())
 
 const Portfolio = () => {
-    const projectCategory = [{id: 1, name: "All"},{id: 2,name: "Web Design"}, {id: 3, name: "Applications"}, {id: 4, name: "Web Development"}]
-    const [projects, setProjects] = useState([
-        {id: 1, name: "Finance", category: "Web Development", image:"project-1.jpg", show: true},
-        {id: 2, name: "Orizon", category: "Web Development", image:"project-2.png", show: true},
-        {id: 3, name: "Fundo", category: "Web Design", image:"project-3.jpg", show: true},
-        {id: 4, name: "Brawlhalla", category: "Applications", image:"project-4.png", show: true},
-        {id: 5, name: "DSM.", category: "Web Design", image:"project-5.png", show: true},
-        {id: 6, name: "MetaSpark", category: "Web Design", image:"project-6.png", show: true},
-        {id: 7, name: "Summary", category: "Web Development", image:"project-7.png", show: true},
-        {id: 8, name: "Task Manager", category: "Applications", image:"project-8.jpg", show: true},
-        {id: 9, name: "Arrival", category: "Web Development", image:"project-9.png", show: true},
-    ])
+    const projectCategory = [{id: 1, name: "All"},{id: 2,name: "React"}, {id: 3, name: "NodeJS"}, {id: 4, name: "Vanilla HTML"}, {id: 5, name: "Python"}, {id: 6, name: "Vue"}, {id: 7, name: "Laravel"}, {id: 8, name: "Others"}]
+    const toastSetup = {position: "top-center", autoClose: 3000, hideProgressBar: false, closeOnClick: true, pauseOnHover: false, draggable: false, progress: undefined, theme: "dark"}
+    
+    const { data , error } = useSWR('/api/staticdata', fetcher)
+
+    if (error) toast.error('Failed to load...', toastSetup)
+    if (!data) toast.info('Loading Projects...', toastSetup)
+
+    const parseData = JSON.parse(data)
+    const setDisplay = parseData.map(p => ({...p, show: true }))
+    
+    const [projects, setProjects] = useState(setDisplay)
     const [click, setClick] = useState(false)
     const [selectValue, setSelectValue] = useState("Select category")
     const [clickColor, setClickColor] = useState("All")
     const {page} = useStateContext()
     
-
     const handleClick = (e) => {
         const selectedCategory = e.target.innerText
         setClick(false)
@@ -63,12 +67,12 @@ const Portfolio = () => {
                 <ul className="project-list">
                     {projects.map((project) => (
                         <li className={`project-item ${project.show ? "active" : ""}`} key={project.id}>
-                            <a href="#">
+                            <a href={project.url}>
                                 <figure className="project-img">
                                     <div className="project-item-icon-box">
                                         <IoEyeOutline className="ion-icon"/>
                                     </div>
-                                    <img src={`/images/${project.image}`} alt={project.name.toLocaleLowerCase()} loading="lazy" />
+                                    <img src={`/projectDemo/${project.img}`} alt={project.name.toLocaleLowerCase()} loading="lazy" />
                                 </figure>
                                 <h3 className="project-title">{project.name}</h3>
                                 <p className="project-category">{project.category}</p>
@@ -77,6 +81,7 @@ const Portfolio = () => {
                     ))}
                 </ul>
             </section>
+            <ToastContainer />
         </article>
     )
 }
