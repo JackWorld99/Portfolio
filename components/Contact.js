@@ -8,61 +8,37 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 const Contact = () => {
+    const toastSetup = {position: "bottom-right", autoClose: 3000, hideProgressBar: false, closeOnClick: true, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"}
     const {page} = useStateContext()
     const sendEmail = (e) => {
         e.preventDefault()
-        try{
-            const name = e.target.Name.value
-            const message = e.target.Message.value
-            const email = e.target.Email.value
-            const inputError = (value) => {
-                toast.error(value + ' is required', {
-                    position: "bottom-right",
-                    autoClose: 3000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "dark"
-                })
-            }
-            if(validator.isEmpty(name,{ ignore_whitespace:true })){inputError("Name")}
-            if(validator.isEmpty(message)){inputError("Message")}
-            if(!validator.isEmail(email)) throw ""
-            const normalize = validator.normalizeEmail(email)
-            if(!(MailChecker.isValid(normalize) && disposable.validate(normalize))) throw ""
-            toast.success('Mail sent successfully !', {
-                position: "bottom-right",
-                autoClose: 3000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "dark"
-            })
-            toast.info('Thanks, I will reply asap', {
-                position: "bottom-right",
-                autoClose: 3000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "dark"
-            })
-        }catch(e){
-            toast.error('Please enter a valid email !', {
-                position: "bottom-right",
-                autoClose: 3000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "dark"
-            })
+        const name = e.target.Name.value
+        const message = e.target.Message.value
+        const email = e.target.Email.value
+        
+        const validateName = validator.isEmpty(name, { ignore_whitespace:true })
+        const validateMessage = validator.isEmpty(message, { ignore_whitespace:true })
+        const validateEmail = validator.isEmail(email)
+
+        const inputError = (value) => toast.error(value + ' is required', toastSetup)
+
+        if(validateName){inputError("Name")}
+        if(validateMessage){inputError("Message")}
+
+        if(!validateEmail) toast.error('Please enter a valid email !', toastSetup)
+        const normalize = validator.normalizeEmail(email)
+        const disposableEmail = MailChecker.isValid(normalize) && disposable.validate(normalize)
+        if(!disposableEmail) toast.error('This is a disposable email !', toastSetup)
+
+        if(!validateName && !validateMessage && validateEmail && disposableEmail) {
+            toast.success('Mail sent successfully !', toastSetup)
+            toast.info('Thanks, I will reply asap', toastSetup)
+        }else{toast.error('Something went wrong, please try again !', toastSetup)}
+        
+        const emailDetails = {
+            Name: name,
+            Email: normalize,
+            Message: email
         }
     }
 
@@ -74,7 +50,7 @@ const Contact = () => {
 
             <section className="mapbox">
                 <figure>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127628.9681390175!2d103.67838207235523!3d1.5249482714950149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da12c6d36b3a27%3A0xd5f4b21db593d4f5!2sJohor%20Bahru%2C%20Johor!5e0!3m2!1sen!2smy!4v1661698829360!5m2!1sen!2smy" width="400" height="300" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127631.07988903335!2d103.69005504598817!3d1.4889118503384597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da12c6d36b3a27%3A0xd5f4b21db593d4f5!2sJohor%20Bahru%2C%20Johor!5e0!3m2!1sen!2smy!4v1661781629979!5m2!1sen!2smy" width="400" height="300" loading="lazy"></iframe>
                 </figure>
             </section>
 
