@@ -1,25 +1,12 @@
-import React, {useState } from "react"
+import React, {useState} from "react"
 import useSWR from 'swr'
 import { IoChevronDown, IoEyeOutline } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-
-const fetcher = (url) => fetch(url).then((res) => res.json())
 
 const Portfolio = () => {
-    const projectCategory = [{id: 1, name: "All"},{id: 2,name: "React"}, {id: 3, name: "NodeJS"}, {id: 4, name: "Vanilla HTML"}, {id: 5, name: "Python"}, {id: 6, name: "Vue"}, {id: 7, name: "Laravel"}, {id: 8, name: "Others"}]
-    const toastSetup = {position: "top-center", autoClose: 3000, hideProgressBar: false, closeOnClick: true, pauseOnHover: false, draggable: false, progress: undefined, theme: "dark"}
-    
-    const { data , error } = useSWR('/api/staticdata', fetcher)
-
-    if (error) toast.error('Failed to load...', toastSetup)
-    if (!data) toast.info('Loading Projects...', toastSetup)
-
+    const { data } = useSWR('/api/staticdata')
     const parseData = JSON.parse(data)
-    const setDisplay = parseData.map(p => ({...p, show: true }))
-    
-    const [projects, setProjects] = useState(setDisplay)
+    const [projects, setProjects] = useState(() =>parseData.repo.map(p => ({...p, show: true })))
     const [click, setClick] = useState(false)
     const [selectValue, setSelectValue] = useState("Select category")
     const [clickColor, setClickColor] = useState("All")
@@ -40,7 +27,7 @@ const Portfolio = () => {
             </header>
             <section className="projects">
                 <ul className="filter-list">
-                    {projectCategory.map((pc) => (
+                    {parseData.projectCategory.map((pc) => (
                         <li className="filter-item" key={pc.id}>
                             <button className={clickColor === pc.name ? "active" : ""} onClick={handleClick}>{pc.name}</button>
                         </li>
@@ -54,9 +41,8 @@ const Portfolio = () => {
                             <IoChevronDown className="ion-icon"/>
                         </div>
                     </button>
-
                     <ul className="select-list">
-                        {projectCategory.map((pc) => (
+                        {parseData.projectCategory.map((pc) => (
                             <li className="select-item" key={pc.id}> 
                                 <button onClick={handleClick}>{pc.name}</button>
                             </li>
@@ -81,7 +67,6 @@ const Portfolio = () => {
                     ))}
                 </ul>
             </section>
-            <ToastContainer />
         </article>
     )
 }
