@@ -1,23 +1,23 @@
 import React, {useState} from "react"
-import useSWR from 'swr'
 import { IoChevronDown, IoEyeOutline } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
+import useSWR from 'swr'
 
 const Portfolio = () => {
     const { data } = useSWR('/api/staticdata')
+    const {page} = useStateContext()
     const parseData = JSON.parse(data)
-    const [projects, setProjects] = useState(() =>parseData.repo.map(p => ({...p, show: true })))
     const [click, setClick] = useState(false)
     const [selectValue, setSelectValue] = useState("Select category")
-    const [clickColor, setClickColor] = useState("All")
-    const {page} = useStateContext()
+    const [triggerColor, setTriggerkColor] = useState("All")
+    const [showAll, setShowAll] = useState(true)
     
     const handleClick = (e) => {
         const selectedCategory = e.target.innerText
         setClick(false)
-        setClickColor(selectedCategory)
+        setShowAll(false)
+        setTriggerkColor(selectedCategory)
         setSelectValue(selectedCategory)
-        setProjects(projects.map(project => (selectedCategory === "All" || project.category === selectedCategory) ? {...project, show: true } : {...project, show: false }))
     }
 
     return (
@@ -29,7 +29,7 @@ const Portfolio = () => {
                 <ul className="filter-list">
                     {parseData.projectCategory.map((pc) => (
                         <li className="filter-item" key={pc.id}>
-                            <button className={clickColor === pc.name ? "active" : ""} onClick={handleClick}>{pc.name}</button>
+                            <button className={triggerColor === pc.name ? "active" : ""} onClick={handleClick}>{pc.name}</button>
                         </li>
                     ))}
                 </ul>
@@ -51,8 +51,8 @@ const Portfolio = () => {
                 </div>
 
                 <ul className="project-list">
-                    {projects.map((project) => (
-                        <li className={`project-item ${project.show ? "active" : ""}`} key={project.id}>
+                    {parseData.repo.map((project) => (
+                        <li className={`project-item ${(showAll || selectValue === "All" || selectValue === project.category) ? "active" : "" }`} key={project.id}>
                             <a href={project.url}>
                                 <figure className="project-img">
                                     <div className="project-item-icon-box">
