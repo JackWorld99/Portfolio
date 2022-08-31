@@ -4,13 +4,13 @@ import { useStateContext } from "../context/StateContext"
 import useSWR from 'swr'
 
 const Portfolio = () => {
-    const { data } = useSWR('/api/staticdata')
     const {page} = useStateContext()
-    const parseData = JSON.parse(data)
     const [click, setClick] = useState(false)
     const [selectValue, setSelectValue] = useState("Select category")
     const [triggerColor, setTriggerkColor] = useState("All")
     const [showAll, setShowAll] = useState(true)
+    const { data} = useSWR('/api/staticdata')
+    const parseData = JSON.parse(data)
     
     const handleClick = (e) => {
         const selectedCategory = e.target.innerText
