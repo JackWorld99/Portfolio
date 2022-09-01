@@ -53,6 +53,75 @@ const About = () => {
                             <img src="/images/icon-design.svg" alt="design icon" width="40" />
                         </div>
                         <div className="service-content-box">
+                            <h4 className="h4 service-item-title">Software Engineer</h4>
+                        </div>
+                    </li>
+                    <li className="service-item">
+                        <div className="service-icon-box">
+                            <img src="/images/icon-dev.svg" alt="Web development icon" width="40" />
+                        </div>
+                        <div className="service-content-box">
+                            <h4 className="h4 service-item-title">Software Architect</h4>
+                        </div>
+                    </li>
+                    <li className="service-item">
+                        <div className="service-icon-box">
+                            <img src="/images/icon-app.svg" alt="mobile app icon" width="40" />
+                        </div>
+                        <div className="service-content-box">
+                            <h4 className="h4 service-item-title">Junior Programmer</h4>
+                        </div>
+                    </li>
+                    <li className="service-item">
+                        <div className="service-icon-box">
+                            <img src="/images/icon-photo.svg" alt="camera icon" width="40" />
+                        </div>
+                        <div className="service-content-box">
+                            <h4 className="h4 service-item-title">Analyst Programmer</h4>
+                        </div>
+                    </li>
+                    <li className="service-item">
+                        <div className="service-icon-box">
+                            <img src="/images/icon-photo.svg" alt="camera icon" width="40" />
+                        </div>
+                        <div className="service-content-box">
+                            <h4 className="h4 service-item-title">Software Quality Engineer</h4>
+                        </div>
+                    </li>
+                    <li className="service-item">
+                        <div className="service-icon-box">
+                            <img src="/images/icon-photo.svg" alt="camera icon" width="40" />
+                        </div>
+                        <div className="service-content-box">
+                            <h4 className="h4 service-item-title">Software Tester</h4>
+                        </div>
+                    </li>
+                    <li className="service-item">
+                        <div className="service-icon-box">
+                            <img src="/images/icon-photo.svg" alt="camera icon" width="40" />
+                        </div>
+                        <div className="service-content-box">
+                            <h4 className="h4 service-item-title">Web Developer</h4>
+                        </div>
+                    </li>
+                    <li className="service-item">
+                        <div className="service-icon-box">
+                            <img src="/images/icon-photo.svg" alt="camera icon" width="40" />
+                        </div>
+                        <div className="service-content-box">
+                            <h4 className="h4 service-item-title">Mobile Developer</h4>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            {/* <section className="service">
+                <h3 className="h3 service-title">What i&apos;m doing</h3>
+                <ul className="service-list">
+                    <li className="service-item">
+                        <div className="service-icon-box">
+                            <img src="/images/icon-design.svg" alt="design icon" width="40" />
+                        </div>
+                        <div className="service-content-box">
                             <h4 className="h4 service-item-title">Web design</h4>
                             <p className="service-item-text">
                                 The most modern and high-quality design made at a professional level.
@@ -93,7 +162,7 @@ const About = () => {
                         </div>
                     </li>
                 </ul>
-            </section>
+            </section> */}
             <section className="testimonials">
                 <h3 className="h3 testimonials-title">Testimonials</h3>
                 <ul className="testimonials-list has-scrollbar">

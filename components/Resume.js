@@ -19,8 +19,9 @@ const Resume = () => {
                 </div>
                 <ol className="timeline-list">
                     <li className="timeline-item">
-                        <h4 className="h4 timeline-item-title">University school of the arts</h4>
-                        <span>2007 — 2008</span>
+                        <h4 className="h4 timeline-item-title">University Tunku Abdul Rahman (UTAR)</h4>
+                        <span><b>Bachelor of Science (Honours) Software Engineering</b></span>
+                        <span>2018 — 2022</span>
                         <p className="timeline-text">
                             Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
                             quas molestias
@@ -28,6 +29,17 @@ const Resume = () => {
                         </p>
                     </li>
                     <li className="timeline-item">
+                        <h4 className="h4 timeline-item-title">Foon Yew High School</h4>
+                        <span><b>Science</b></span>
+                        <span>2012 — 2017</span>
+                        <p className="timeline-text">
+                            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                            quas molestias
+                            exceptur.
+                        </p>
+                        <p className="timeline-text"><b>UEC&ensp;·&ensp;SPM&ensp;</b></p>
+                    </li>
+                    {/* <li className="timeline-item">
                         <h4 className="h4 timeline-item-title">New york academy of art</h4>
                         <span>2006 — 2007</span>
                         <p className="timeline-text">
@@ -43,7 +55,7 @@ const Resume = () => {
                             magni dolores
                             eos.
                         </p>
-                    </li>
+                    </li> */}
                 </ol>
             </section>
 
@@ -56,15 +68,18 @@ const Resume = () => {
                 </div>
                 <ol className="timeline-list">
                     <li className="timeline-item">
-                        <h4 className="h4 timeline-item-title">Creative director</h4>
-                        <span>2015 — Present</span>
+                        <h4 className="h4 timeline-item-title"> Internship - Web Developer</h4>
+                        <span>Oct 2020 — Jan 2021</span>
                         <p className="timeline-text">
-                            Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                            molestias
-                            exceptur.
+                            During my industrial training/internship, I worked as a <b>Web Developer</b> in a shipping/logistics company call <b>Wepost</b>. Job scope conducts <b>Frontend Web Design</b> and <b>Backend Web Development</b>. 
                         </p>
+                        <span className="skill-learn">Learned Skills</span>
+                        <p className="timeline-text"><b>Laravel&ensp;·&ensp;HTML&ensp;·&ensp;JavaScript&ensp;·&ensp;CSS&ensp;·&ensp;jQuery&ensp;·&ensp;MySQL&ensp;·&ensp;RESTAPI&ensp;·&ensp;Bootstrap&ensp;·&ensp;Git</b></p>
+                        {/* <div className="intern-skill"> 
+                            <p className="intern">Laravel&ensp;·&ensp;HTML&ensp;·&ensp;JavaScript&ensp;·&ensp;CSS&ensp;·&ensp;jQuery&ensp;·&ensp;MySQL&ensp;·&ensp;RESTAPI&ensp;·&ensp;Bootstrap&ensp;·&ensp;Git</p>
+                        </div> */}
                     </li>
-                    <li className="timeline-item">
+                    {/* <li className="timeline-item">
                         <h4 className="h4 timeline-item-title">Art director</h4>
                         <span>2013 — 2015</span>
                         <p className="timeline-text">
@@ -81,7 +96,7 @@ const Resume = () => {
                             quas molestias
                             exceptur.
                         </p>
-                    </li>
+                    </li> */}
                 </ol>
             </section>
 
