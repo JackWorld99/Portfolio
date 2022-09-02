@@ -20,12 +20,12 @@ const Home = ({ fallback }) => {
 
 export const getStaticProps = async () => {
   const res = await fetch('http://localhost:3000/api/staticdata')
-  const repos = await res.json()
+  const staticdata = await res.json()
   
   return {
     props: {
       fallback: {
-        '/api/staticdata': repos
+        '/api/staticdata': staticdata
       }
     },
   }

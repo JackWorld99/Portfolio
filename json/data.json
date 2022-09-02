@@ -242,5 +242,160 @@
          "img": "Vue Weight Tracker.gif",
          "category": "Vue"
       }
+   ],
+   "skillIcon": [
+      {
+         "id": 1,
+         "name": "Frontend Development",
+         "data": [
+            {
+               "id": 1,
+               "img": "html.png",
+               "alt": "HTML Icon"
+            },
+            {
+               "id": 2,
+               "img": "javascript.png",
+               "alt": "Javascript Icon"
+            },
+            {
+               "id": 3,
+               "img": "css.png",
+               "alt": "CSS Icon"
+            },
+            {
+               "id": 4,
+               "img": "jQuery.png",
+               "alt": "jQuery Icon"
+            },
+            {
+               "id": 5,
+               "img": "react.svg",
+               "alt": "React Icon"
+            },
+            {
+               "id": 6,
+               "img": "nextjs.png",
+               "alt": "Nextjs Icon"
+            },
+            {
+               "id": 7,
+               "img": "vue.png",
+               "alt": "Vue Icon"
+            },
+            {
+               "id": 8,
+               "img": "react-native.svg",
+               "alt": "React Native Icon"
+            },
+            {
+               "id": 9,
+               "img": "Bootstrap.svg",
+               "alt": "Bootstrap Icon"
+            },
+            {
+               "id": 10,
+               "img": "tailwindcss.svg",
+               "alt": "Tailwindcss Icon"
+            },
+            {
+               "id": 11,
+               "img": "wordpress.png",
+               "alt": "Wordpress Icon"
+            }
+         ]
+      },
+      {
+         "id": 2,
+         "name": "Backend Development",
+         "data": [
+            {
+               "id": 1,
+               "img": "php.png",
+               "alt": "PHP Icon"
+            },
+            {
+               "id": 2,
+               "img": "sql.png",
+               "alt": "SQL Icon"
+            },
+            {
+               "id": 3,
+               "img": "nodejs.png",
+               "alt": "NodeJs Icon"
+            },
+            {
+               "id": 4,
+               "img": "python.png",
+               "alt": "Python Icon"
+            },
+            {
+               "id": 5,
+               "img": "laravel.png",
+               "alt": "Laravel Icon"
+            },
+            {
+               "id": 6,
+               "img": "mysql.svg",
+               "alt": "Mysql Icon"
+            },
+            {
+               "id": 7,
+               "img": "mongodb.svg",
+               "alt": "MongoDB Icon"
+            },
+            {
+               "id": 8,
+               "img": "firebase.svg",
+               "alt": "Firebase Icon"
+            },
+            {
+               "id": 9,
+               "img": "wordpress.png",
+               "alt": "Wordpress Icon"
+            }
+         ]
+      },
+      {
+         "id": 3,
+         "name": "Development Tools",
+         "data": [
+            {
+               "id": 1,
+               "img": "git.png",
+               "alt": "git Icon"
+            },
+            {
+               "id": 2,
+               "img": "github.png",
+               "alt": "github Icon"
+            },
+            {
+               "id": 3,
+               "img": "sourcetree.png",
+               "alt": "sourcetree Icon"
+            },
+            {
+               "id": 4,
+               "img": "linux.svg",
+               "alt": "Linux Icon"
+            },
+            {
+               "id": 5,
+               "img": "vscode.png",
+               "alt": "Vscode Icon"
+            },
+            {
+               "id": 6,
+               "img": "postman.png",
+               "alt": "Postman Icon"
+            },
+            {
+               "id": 7,
+               "img": "docker.png",
+               "alt": "Docker Icon"
+            }
+         ]
+      }
    ]
 }
