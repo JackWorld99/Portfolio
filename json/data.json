@@ -243,6 +243,56 @@
          "category": "Vue"
       }
    ],
+   "progressBar": [
+      {
+         "id": 1,
+         "name": "JavaScript",
+         "score": "70%",
+         "style": {
+            "width": "70%"
+         }
+      },
+      {
+         "id": 2,
+         "name": "SQL",
+         "score": "65%",
+         "style": {
+            "width": "65%"
+         }
+      },
+      {
+         "id": 3,
+         "name": "PHP",
+         "score": "65%",
+         "style": {
+            "width": "65%"
+         }
+      },
+      {
+         "id": 4,
+         "name": "Python",
+         "score": "50%",
+         "style": {
+            "width": "50%"
+         }
+      },
+      {
+         "id": 5,
+         "name": "Java, C#",
+         "score": "40%",
+         "style": {
+            "width": "40%"
+         }
+      },
+      {
+         "id": 6,
+         "name": "C++",
+         "score": "30%",
+         "style": {
+            "width": "30%"
+         }
+      }
+   ],
    "skillIcon": [
       {
          "id": 1,

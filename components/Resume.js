@@ -12,7 +12,6 @@ const Resume = () => {
             <header>
                 <h2 className="h2 article-title">Resume</h2>
             </header>
-
             <section className="timeline">
                 <div className="title-wrapper">
                     <div className="icon-box">
@@ -50,7 +49,6 @@ const Resume = () => {
                     </li>
                 </ol>
             </section>
-
             <section className="timeline">
                 <div className="title-wrapper">
                     <div className="icon-box">
@@ -65,80 +63,33 @@ const Resume = () => {
                         <p className="timeline-text">
                             During my industrial training/internship, I worked as a <b>Web Developer</b> in a shipping/logistics company call <b>Wepost</b>. Job scope conducts <b>Frontend Web Design</b> and <b>Backend Web Development</b>. 
                         </p>
+                         
                         <span className="skill-learn">Learned Skills</span>
                         <p className="timeline-text"><b>Laravel&ensp;·&ensp;HTML&ensp;·&ensp;JavaScript&ensp;·&ensp;CSS&ensp;·&ensp;jQuery&ensp;·&ensp;MySQL&ensp;·&ensp;RESTAPI&ensp;·&ensp;Bootstrap&ensp;·&ensp;Git</b></p>
                     </li>
                 </ol>
             </section>
-
             <section className="skill">
                 <h3 className="h3 skills-title">My skills</h3>
                 <ul className="skills-list content-card">
-                    <li className="skills-item">
-                        <div className="title-wrapper">
-                            <h5 className="h5">JavaScript</h5>
-                            <data value="70">&ensp;·&ensp;70%</data>
-                        </div>
-                        <div className="skill-progress-bg">
-                            <div className="skill-progress-fill" style={{width: "70%"}}></div>
-                        </div>
-                    </li>
-
-                    <li className="skills-item">
-                        <div className="title-wrapper">
-                            <h5 className="h5">SQL</h5>
-                            <data value="65">&ensp;·&ensp;65%</data>
-                        </div>
-                        <div className="skill-progress-bg">
-                            <div className="skill-progress-fill" style={{width: "65%"}}></div>
-                        </div>
-                    </li>
-
-                    <li className="skills-item">
-                        <div className="title-wrapper">
-                            <h5 className="h5">PHP</h5>
-                            <data value="65">&ensp;·&ensp;65%</data>
-                        </div>
-                        <div className="skill-progress-bg">
-                            <div className="skill-progress-fill" style={{width: "65%"}}></div>
-                        </div>
-                    </li>
-
-                    <li className="skills-item">
-                        <div className="title-wrapper">
-                            <h5 className="h5">Python</h5>
-                            <data value="50">&ensp;·&ensp;50%</data>
-                        </div>
-                        <div className="skill-progress-bg">
-                            <div className="skill-progress-fill" style={{width: "50%"}}></div>
-                        </div>
-                    </li>
-                    <li className="skills-item">
-                        <div className="title-wrapper">
-                            <h5 className="h5">Java, C#</h5>
-                            <data value="40">&ensp;·&ensp;40%</data>
-                        </div>
-                        <div className="skill-progress-bg">
-                            <div className="skill-progress-fill" style={{width: "40%"}}></div>
-                        </div>
-                    </li>
-                    <li className="skills-item">
-                        <div className="title-wrapper">
-                            <h5 className="h5">C++</h5>
-                            <data value="30">&ensp;·&ensp;30%</data>
-                        </div>
-                        <div className="skill-progress-bg">
-                            <div className="skill-progress-fill" style={{width: "30%"}}></div>
-                        </div>
-                    </li>
+                    {parseData.progressBar.map(pb => ( 
+                        <li className="skills-item" key={pb.id}>
+                            <div className="title-wrapper">
+                                <h5 className="h5">{pb.name}</h5>
+                                <data value={pb.score}>&nbsp;·&ensp;{pb.score}</data>
+                            </div>
+                            <div className="skill-progress-bg">
+                                <div className="skill-progress-fill" style={pb.style}></div>
+                            </div>
+                        </li>
+                    ))}
                 </ul>
             </section>
-
             {parseData.skillIcon.map(s => (
                 <section className="clients" key={s.id}>
                     <h3 className="h3 clients-title">{s.name}</h3>
                     <ul className="clients-list has-scrollbar">
-                        {s.data.map( d => (
+                        {s.data.map(d => (
                             <li className="clients-item" key={d.id}>
                                 <img src={`/skillIcon/${d.img}`} alt={d.alt} />
                             </li>
@@ -146,7 +97,6 @@ const Resume = () => {
                     </ul>
                 </section>
             ))}
-
         </article>
     )
 }
