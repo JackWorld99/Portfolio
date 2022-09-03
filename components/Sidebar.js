@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { IoChevronDown, IoMailOutline, IoPhonePortraitOutline, IoCalendarOutline, IoLocationOutline, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5"
+import { IoChevronDown, IoMailOutline, IoPhonePortraitOutline, IoCalendarOutline, IoLocationOutline, IoLogoLinkedin, IoLogoGithub, IoSchool } from "react-icons/io5"
 import { MdLanguage } from "react-icons/md"
 
 const Sidebar = () => {
@@ -35,15 +35,6 @@ const Sidebar = () => {
                             <a href="mailto:jackwong0326@gmail.com" className="contact-link">jackwong0326@gmail.com</a>
                         </div>
                     </li>
-                    {/* <li className="contact-item">
-                        <div className="icon-box">
-                            <IoPhonePortraitOutline className="ion-icon"/>
-                        </div>
-                        <div className="contact-info">
-                            <p className="contact-title">Phone</p>
-                            <a href="tel:+12133522795" className="contact-link">+1 (213) 352-2795</a>
-                        </div>
-                    </li> */}
                     <li className="contact-item">
                         <div className="icon-box">
                             <IoCalendarOutline className="ion-icon"/>
@@ -62,6 +53,7 @@ const Sidebar = () => {
                             <address>Johor Bahru, <br/>Johor, Malaysia</address>
                         </div>
                     </li>
+                    
                     <li className="contact-item">
                         <div className="icon-box">
                             <MdLanguage className="ion-icon"/>
@@ -82,6 +74,11 @@ const Sidebar = () => {
                     <li className="social-item">
                         <a href="https://github.com/JackWorld99" className="social-link">
                             <IoLogoGithub className="ion-icon"/>
+                        </a>
+                    </li>
+                    <li className="social-item">
+                        <a href="https://www.utar.edu.my" className="social-link">
+                            <IoSchool className="ion-icon"/>
                         </a>
                     </li>
                 </ul>
