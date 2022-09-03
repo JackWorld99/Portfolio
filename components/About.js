@@ -1,6 +1,7 @@
 import React, {useRef, useState} from "react"
 import { IoCloseOutline } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
+import useSWR from 'swr'
 
 const About = () => {
     const {page} = useStateContext()
@@ -12,6 +13,8 @@ const About = () => {
     const testimonialsImgRef = useRef() 
     const testimonialsTitleRef = useRef()
     const testimonialsTextRef = useRef()
+    const { data} = useSWR('/api/staticdata')
+    const parseData = JSON.parse(data)
    
     const handleClick = () => {
         imgRef.current.src = testimonialsImgRef.current.src
@@ -46,72 +49,18 @@ const About = () => {
                 </p>
             </section>
             <section className="service">
-                <h3 className="h3 service-title">What i&apos;m doing</h3>
+                <h3 className="h3 service-title">Expected Career</h3>
                 <ul className="service-list">
-                    <li className="service-item">
-                        <div className="service-icon-box">
-                            <img src="/images/icon-design.svg" alt="design icon" width="40" />
-                        </div>
-                        <div className="service-content-box">
-                            <h4 className="h4 service-item-title">Software Engineer</h4>
-                        </div>
-                    </li>
-                    <li className="service-item">
-                        <div className="service-icon-box">
-                            <img src="/images/icon-dev.svg" alt="Web development icon" width="40" />
-                        </div>
-                        <div className="service-content-box">
-                            <h4 className="h4 service-item-title">Software Architect</h4>
-                        </div>
-                    </li>
-                    <li className="service-item">
-                        <div className="service-icon-box">
-                            <img src="/images/icon-app.svg" alt="mobile app icon" width="40" />
-                        </div>
-                        <div className="service-content-box">
-                            <h4 className="h4 service-item-title">Junior Programmer</h4>
-                        </div>
-                    </li>
-                    <li className="service-item">
-                        <div className="service-icon-box">
-                            <img src="/images/icon-photo.svg" alt="camera icon" width="40" />
-                        </div>
-                        <div className="service-content-box">
-                            <h4 className="h4 service-item-title">Analyst Programmer</h4>
-                        </div>
-                    </li>
-                    <li className="service-item">
-                        <div className="service-icon-box">
-                            <img src="/images/icon-photo.svg" alt="camera icon" width="40" />
-                        </div>
-                        <div className="service-content-box">
-                            <h4 className="h4 service-item-title">Software Quality Engineer</h4>
-                        </div>
-                    </li>
-                    <li className="service-item">
-                        <div className="service-icon-box">
-                            <img src="/images/icon-photo.svg" alt="camera icon" width="40" />
-                        </div>
-                        <div className="service-content-box">
-                            <h4 className="h4 service-item-title">Software Tester</h4>
-                        </div>
-                    </li>
-                    <li className="service-item">
-                        <div className="service-icon-box">
-                            <img src="/images/icon-photo.svg" alt="camera icon" width="40" />
-                        </div>
-                        <div className="service-content-box">
-                            <h4 className="h4 service-item-title">Web Developer</h4>
-                        </div>
-                    </li>
-                    <li className="service-item">
-                        <div className="service-icon-box">
-                            <img src="/images/icon-photo.svg" alt="camera icon" width="40" />
-                        </div>
-                        <div className="service-content-box">
-                            <h4 className="h4 service-item-title">Mobile Developer</h4>
-                        </div>
-                    </li>
+                    {parseData.expectedCareer.map(ec => (
+                        <li className="service-item" key={ec.id}>
+                            <div className="service-icon-box">
+                                <img src={`/images/${ec.img}`} alt={ec.alt} width="40" />
+                            </div>
+                            <div className="service-content-box">
+                                <h4 className="h4 service-item-title" style={{color:"#ffdb70"}}>{ec.name}</h4>
+                            </div>
+                        </li>
+                    ))}
                 </ul>
             </section>
             {/* <section className="service">
@@ -263,7 +212,7 @@ const About = () => {
                     </div>
                 </section>
             </div>
-            <section className="clients">
+            {/* <section className="clients">
                 <h3 className="h3 clients-title">Clients</h3>
                 <ul className="clients-list has-scrollbar">
                     <li className="clients-item">
@@ -297,7 +246,7 @@ const About = () => {
                         </a>
                     </li>
                 </ul>
-            </section>
+            </section> */}
         </article>
     )
 }

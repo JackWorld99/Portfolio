@@ -1,4 +1,54 @@
 {
+   "expectedCareer": [
+      {
+         "id": 1,
+         "name": "Software Engineer",
+         "img": "engineer.png",
+         "alt": "Software Engineer Icon"
+      },
+      {
+         "id": 1,
+         "name": "Software Architect",
+         "img": "software-architect.png",
+         "alt": "Software Architect Icon"
+      },
+      {
+         "id": 1,
+         "name": "Junior Programmer",
+         "img": "programmer.png",
+         "alt": "Programmer Icon"
+      },
+      {
+         "id": 1,
+         "name": "Analyst Programmer",
+         "img": "analyst.png",
+         "alt": "Analyst Programmer Icon"
+      },
+      {
+         "id": 1,
+         "name": "Software Quality Engineer",
+         "img": "quality-assurance.png",
+         "alt": "Software Quality Engineer Icon"
+      },
+      {
+         "id": 1,
+         "name": "Software Tester",
+         "img": "software-tester.png",
+         "alt": "Software Tester Icon"
+      },
+      {
+         "id": 1,
+         "name": "Web Developer",
+         "img": "web-developer.png",
+         "alt": "Web Developer Icon"
+      },
+      {
+         "id": 1,
+         "name": "Mobile Developer",
+         "img": "mobile-developer.png",
+         "alt": "Mobile Developer Icon"
+      }
+   ],
    "projectCategory": [
       {
          "id": 1,
