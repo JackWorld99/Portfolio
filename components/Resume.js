@@ -33,11 +33,24 @@ const Resume = () => {
                             quas molestias
                             exceptur.
                         </p>
+                        <section className="blog-posts" style={{margin: "15px 0px"}}>
+                            <ul className="blog-posts-list">
+                                <li className="blog-post-item">
+                                    <a href="https://www.utar.edu.my">
+                                        <figure className="blog-banner-box">
+                                            <img src="/images/university.jpg" alt="Design conferences in 2022" loading="lazy" />
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
                         <span className="skill-learn">Courses Completed</span>
                         <a href="https://study.utar.edu.my/programme-structure-software-engineering.php" style={{color: "white"}}>- Learn more...</a>
                     </li>
                     <li className="timeline-item">
-                        <h4 className="h4 timeline-item-title">Foon Yew High School</h4>
+                        <a href="https://www.foonyew.edu.my/">
+                             <h4 className="h4 timeline-item-title">Foon Yew High School</h4>
+                        </a>
                         <span><b>Science</b></span>
                         <span>2012&ensp;-&ensp;2017</span>
                         <p className="timeline-text">
@@ -46,6 +59,17 @@ const Resume = () => {
                             exceptur.
                         </p>
                         <p className="timeline-text"><b>UEC&ensp;·&ensp;SPM&ensp;</b></p>
+                        <section className="blog-posts" style={{margin: "15px 0px"}}>
+                            <ul className="blog-posts-list">
+                                <li className="blog-post-item">
+                                    <a href="https://www.foonyew.edu.my/">
+                                        <figure className="blog-banner-box">
+                                            <img src="/images/highSchool.png" alt="Design conferences in 2022" loading="lazy" />
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
                     </li>
                 </ol>
             </section>
@@ -63,7 +87,17 @@ const Resume = () => {
                         <p className="timeline-text">
                             During my industrial training/internship, I worked as a <b>Web Developer</b> in a shipping/logistics company call <b>Wepost</b>. Job scope conducts <b>Frontend Web Design</b> and <b>Backend Web Development</b>. 
                         </p>
-                         
+                        <section className="blog-posts" style={{margin: "15px 0px"}}>
+                            <ul className="blog-posts-list">
+                                <li className="blog-post-item">
+                                    <a>
+                                        <figure className="blog-banner-box">
+                                            <img src="/images/intern.png" alt="Design conferences in 2022" loading="lazy" />
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
                         <span className="skill-learn">Learned Skills</span>
                         <p className="timeline-text"><b>Laravel&ensp;·&ensp;HTML&ensp;·&ensp;JavaScript&ensp;·&ensp;CSS&ensp;·&ensp;jQuery&ensp;·&ensp;MySQL&ensp;·&ensp;RESTAPI&ensp;·&ensp;Bootstrap&ensp;·&ensp;Git</b></p>
                     </li>
