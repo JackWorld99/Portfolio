@@ -8,71 +8,10 @@ const Resume = () => {
     const parseData = JSON.parse(data)
 
     return (
-        <article className={`resume ${page === "resume" ? "active" : ""}`}>
+        <article className={`resume ${page === "skills" ? "active" : ""}`}>
             <header>
                 <h2 className="h2 article-title">Resume</h2>
             </header>
-            <section className="timeline">
-                <div className="title-wrapper">
-                    <div className="icon-box">
-                        <IoSchoolOutline className="ion-icon"/>
-                    </div>
-                    <h3 className="h3">Education</h3>
-                </div>
-                <ol className="timeline-list">
-                    <li className="timeline-item">
-                        <a href="https://www.utar.edu.my">
-                            <h4 className="h4 timeline-item-title">University Tunku Abdul Rahman (UTAR)</h4>
-                        </a>
-                        <a href="https://study.utar.edu.my/software-engineering.php">
-                            <span><b>Bachelor of Science (Honours) Software Engineering</b></span>
-                        </a>
-                        <span>2018&ensp;-&ensp;2022</span>
-                        <p className="timeline-text">
-                            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                            quas molestias
-                            exceptur.
-                        </p>
-                        <section className="blog-posts" style={{margin: "15px 0px"}}>
-                            <ul className="blog-posts-list">
-                                <li className="blog-post-item">
-                                    <a href="https://www.utar.edu.my">
-                                        <figure className="blog-banner-box">
-                                            <img src="/images/university.jpg" alt="Design conferences in 2022" loading="lazy" />
-                                        </figure>
-                                    </a>
-                                </li>
-                            </ul>
-                        </section>
-                        <span className="skill-learn">Courses Completed</span>
-                        <a href="https://study.utar.edu.my/programme-structure-software-engineering.php" style={{color: "white"}}>- Learn more...</a>
-                    </li>
-                    <li className="timeline-item">
-                        <a href="https://www.foonyew.edu.my/">
-                             <h4 className="h4 timeline-item-title">Foon Yew High School</h4>
-                        </a>
-                        <span><b>Science</b></span>
-                        <span>2012&ensp;-&ensp;2017</span>
-                        <p className="timeline-text">
-                            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                            quas molestias
-                            exceptur.
-                        </p>
-                        <p className="timeline-text"><b>UEC&ensp;·&ensp;SPM&ensp;</b></p>
-                        <section className="blog-posts" style={{margin: "15px 0px"}}>
-                            <ul className="blog-posts-list">
-                                <li className="blog-post-item">
-                                    <a href="https://www.foonyew.edu.my/">
-                                        <figure className="blog-banner-box">
-                                            <img src="/images/highSchool.png" alt="Design conferences in 2022" loading="lazy" />
-                                        </figure>
-                                    </a>
-                                </li>
-                            </ul>
-                        </section>
-                    </li>
-                </ol>
-            </section>
             <section className="timeline">
                 <div className="title-wrapper">
                     <div className="icon-box">
@@ -87,6 +26,17 @@ const Resume = () => {
                         <p className="timeline-text">
                             During my industrial training/internship, I worked as a <b>Web Developer</b> in a shipping/logistics company call <b>Wepost</b>. Job scope conducts <b>Frontend Web Design</b> and <b>Backend Web Development</b>. 
                         </p>
+                        <ul className="intern-learn"> 
+                            <li>Being assigned to the e-commerce team and using algorithms to group packages that match the products purchased by the user into appropriate containers, such as sea and air freight, it will make it easier for customer service staff to check the status of packages instantly, which will increase sales.</li>
+                            <li>Participated in the development of a questionnaire to give away coupons during the Double 11 and Double 12 shopping festivals.</li>
+                            <li>Communicate with customer service staff to understand the problems they face when using the backend application, solve technical problems, provide technical support, optimise the operating interface and customise new features.</li>
+                            <li>Participate in the development of a referral program page where users can earn corresponding rebate benefits and points by referring apps.</li>
+                            <li>Collaborate with colleagues to create new SQL databases to improve overall efficiency and facilitate future maintenance.</li>
+                            <li>Actively participate in weekly team meetings and report on the progress of the project.</li>
+                            <li>Perform weekly responsibilities and projects assigned by the manager.</li>
+                        </ul>
+                        <span className="skill-learn">Learned Skills<p className="timeline-text" style={{display: "inline"}}><b>&ensp;·&ensp;Laravel&ensp;·&ensp;HTML&ensp;·&ensp;JavaScript&ensp;·&ensp;CSS&ensp;·&ensp;jQuery&ensp;·&ensp;MySQL&ensp;·&ensp;RESTAPI&ensp;·&ensp;Bootstrap&ensp;·&ensp;Git</b></p></span>
+                        
                         <section className="blog-posts" style={{margin: "15px 0px"}}>
                             <ul className="blog-posts-list">
                                 <li className="blog-post-item">
@@ -98,8 +48,12 @@ const Resume = () => {
                                 </li>
                             </ul>
                         </section>
-                        <span className="skill-learn">Learned Skills</span>
-                        <p className="timeline-text"><b>Laravel&ensp;·&ensp;HTML&ensp;·&ensp;JavaScript&ensp;·&ensp;CSS&ensp;·&ensp;jQuery&ensp;·&ensp;MySQL&ensp;·&ensp;RESTAPI&ensp;·&ensp;Bootstrap&ensp;·&ensp;Git</b></p>
+                       
+                        {/* 1. 前端和后端开发，为客服人员提供有用的技术支持和帮助。
+                        2. 优化网页并将测试结果报告给主管。
+                        3. 与同事协作创建新的SQL数据库，提高整体效率，方便日后维护。
+                        4. 执行经理分配的每周职责和项目。
+                        5. 积极参加每周的团队会议，汇报项目的进展情况。 */}
                     </li>
                 </ol>
             </section>
@@ -131,6 +85,21 @@ const Resume = () => {
                     </ul>
                 </section>
             ))}
+            <section className="service">
+                <h3 className="h3 service-title">Desired Career</h3>
+                <ul className="service-list">
+                    {parseData.expectedCareer.map(ec => (
+                        <li className="service-item" key={ec.id}>
+                            <div className="service-icon-box">
+                                <img src={`/images/${ec.img}`} alt={ec.alt} width="40" />
+                            </div>
+                            <div className="service-content-box">
+                                <h4 className="h4 service-item-title" style={{color:"#ffdb70"}}>{ec.name}</h4>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
+            </section>
         </article>
     )
 }
