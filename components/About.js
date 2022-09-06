@@ -37,15 +37,19 @@ const About = () => {
             </header>
             <section className="about-text">
                 <p>
-                    Hi, I&apos;m Wei Jian, you can call me Jack as well. I&apos;m a rookie fresh out of Software Engineering. I&apos;m an ordinary person, a delusional person who wants to change the world with code.
+                    Hi, I&apos;m Wei Jian, you can call me Jack as well. I&apos;m a rookie fresh out of Software Engineering. I&apos;m an ordinary person, a delusional rookie who wants to change the world with code.
                 </p>
                 <p>
-                    I&apos;m a inquisitive person, When I encounter new technologies or better code algorithms, I will research day and night to find as much information as possible. I love reading books because they contain the experience and wisdom of different authors who have spent their entire lives condensing them into one book. I often worry about finding books. In order to solve this problem, I have the idea of developing a book scraping application. In order to study web scraping, I used to stay up all day and night. I&apos;m the type of person who loses sleep when I find something new that interests me, it sounds crazy, but it brings me great satisfaction when a vexing problem is solved. 
+                    To be honest, I was a computer idiot before high school. Although I have a computer at home, the Internet is full of all kinds of violent and pornographic content, so my parents have restricted my access since I was a child. The only time I have access to computers is during computer classes at school. At that time I didn&apos;t even know how to shut down the computer. I started to use the computer unrestricted after I graduated from high school. You can imagine how devastated I was when I first got into programming in university, the code was like alien text to me. My grades in the first semester of university almost ended in failing grades. 
                 </p>
                 <p>
-                    I enjoy the process of finding problems in life and turning my thoughts and ideas into reality. I love challenges and learning, and I enjoy the process of going from noob to proficient. Learn new things and go in different directions. Because of this, I know a little bit of everything but not proficient. I&apos;m committed to making complex things simple, the simpler the better. I don&apos;t like wasting time, I always try to get things done in the shortest time, and then leave the rest of the time for myself to do what I want to do. After all, life is short and it&apos;s not easy to find what you love to do and stick to what you like. My motto is to be happy and enjoy life every day.
-                    {/* 我是一个富有好奇心的人， 遇到新技术或是有更好代码算法时，我会没日没夜的研究尽可能地搜寻更多的信息。我喜欢看书，因为书里涵盖个个不同作者的经验与智慧，他们花了一生的时间将其浓缩成一本书。常常为了找书而苦恼，为了解决这个问题有了开发抓书应用的想法，为了研究web scraping我曾经一日一夜没睡。我是那种发现自己感兴趣的新东西时就会废寝忘食的那种人，听起来蛮疯狂的，但当苦恼的问题解决后，我感到非常有满足感。我享受那种在生活中发现问题并将脑子里想法在浏览器中变成现实的过程。我喜欢挑战喜欢学习，我享受从一窍不通到精通的过程。学习新事物并朝不同方向发展。因为这样以至于我什么都懂一点但是都不精通。我致力于将复杂的东西变简单，对越简单越好。我不喜欢浪费时间，我总想着用最短的时间把事情完成，然后将剩下的时间留给自己做自己想做的事。毕竟人生苦短，找到自己喜欢做的事和坚持自己喜欢的事并不容易，我的座右铭就是天天开心享受人生。 */}
-                    {/* 我是一个平凡人，一个痴心妄想，想靠代码改变世界的人。 */}
+                    With the new environment of the university and the fact that I knew nothing about programming at the time, I began to wonder if I had chosen the wrong subject and whether I was not suitable for this path. During the epidemic, I couldn&apos;t go anywhere, so I searched for tutorials on YouTube and started to learn step by step from the basics, and then I slowly mastered it. Computers and codes won&apos;t lie to you, it treats you with sincerity, if you enter an order to tell him to go left, he will never go right, and I think that&apos;s why I&apos;m so obsessed with it.
+                </p>
+                <p>
+                    I&apos;m a inquisitive person, when I encounter new technologies or better code algorithms, I&apos;ll research how this technique works and find out as much information as possible. There was a period of time when I was often struggling to find books. In order to solve this problem, I came up with the idea of developing a book scraping application. I stayed up all night to study how to implement web scraping. I&apos;m the type of person who loses sleep when I find something new that interests me, it sounds crazy, but it brings me great satisfaction when a vexing problem is solved. 
+                </p>
+                <p>
+                    I enjoy the process of finding problems in life and turning my thoughts and ideas into reality. I enjoy the process of going from noob to proficient. Learn new things and go in different directions. Because of this personality, I know a little bit of everything but not proficient. I&apos;m committed to making complex things simple, the simpler the better. I don&apos;t like wasting time, I always try to get things done in the shortest time, and then leave the rest of the time for myself to do what I want to do. After all, life is short and it&apos;s not easy to find what you love to do and stick to what you like. My motto is to be happy and enjoy life every day.
                 </p>
                 {/* <button className="form-btn">
                     <IoMdDownload className="ion-icon"/>
@@ -68,12 +72,13 @@ const About = () => {
                             <span><b>Bachelor of Science (Honours) Software Engineering</b></span>
                         </a>
                         <span>2018&ensp;-&ensp;2022</span>
-                        <p className="timeline-text">
-                            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                            quas molestias
-                            exceptur.
+                        <p className="timeline-text" style={{marginBottom:"5px"}}>
+                            The University of Raman is a well-known private comprehensive research university located in Malaysia. The name is taken from Tunku Abdul Rahman, the first prime minister of Malaysia. It is one of the Premier Digital Tech Universities that are recognized by Malaysia Digital Economy Corporation (MDEC).
                         </p>
-                        <section className="blog-posts" style={{margin: "15px 0px"}}>
+                        <p className="timeline-text">
+                            UTAR&ensp;-&ensp;&ldquo;Universiti Tak Ada Rehat&rdquo; in Malay, which means it is a University without rest, the mantra often used by the lecturer of utar when giving assignments. The long term is 14 weeks, and the short term is 7 weeks. An average of five subjects are taken in a semester, and each subject has more than one assignment. It is a very fast paced university, and the schedule is full every day. I am either doing assignments or preparing for tests every day. although every day was very busy without university life, but every day was very fulfilling. Fortunately, I survived and finally graduated.
+                        </p>
+                       <section className="blog-posts" style={{margin: "15px 0px"}}>
                             <ul className="blog-posts-list">
                                 <li className="blog-post-item">
                                     <a href="https://www.utar.edu.my">
@@ -94,9 +99,7 @@ const About = () => {
                         <span><b>Science</b></span>
                         <span>2012&ensp;-&ensp;2017</span>
                         <p className="timeline-text">
-                            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                            quas molestias
-                            exceptur.
+                            Foon Yew High School - The largest Chinese independent high school in Malaysia. That&apos;s right, this is the high school I went to. There are endless homework, tests, and classes six days a week. There are laughter, tears, and confusion, it&apos;s a place full of memories. I used to think that living here was like a year, but in retrospect it was actually the happiest time so far.
                         </p>
                         <p className="timeline-text"><b>UEC&ensp;·&ensp;SPM&ensp;</b></p>
                         <section className="blog-posts" style={{margin: "15px 0px"}}>
