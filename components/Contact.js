@@ -84,6 +84,7 @@ const Contact = () => {
                     <textarea name="Message" className="form-input" placeholder="Your Message"></textarea>
                     <input type="text" name="_honey" style={{display:"none"}} />
                     <input type="hidden" name="_template" value="table" />
+                    <input type="hidden" name="_next" value="https://localhost/success"></input>
                     <button className="form-btn">
                         <IoPaperPlane className="ion-icon"/>
                         <span>Send Message</span>

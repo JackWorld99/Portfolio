@@ -1244,6 +1244,90 @@ textarea.form-input::-webkit-resizer {
   background: var(--bg-gradient-jet);
 }
 
+.success {
+  margin: auto;
+  width: 650px;
+  margin-top: 120px;
+  background-color: var(--eerie-black-2);
+  padding: 20px 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.success .icon {
+  width: 25%;
+}
+
+.success h2 {
+  text-transform: capitalize;
+  margin-top: 15px 0px;
+  font-weight: var(--fw-600);
+  font-size: var(--fs-1);
+  color: var(--orange-yellow-crayola);
+}
+
+.success .description {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  text-align: center;
+  margin: 10px;
+  color: var(--white-2);
+}
+
+.success-btn {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  margin: 10px 0px 5px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.success-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.success-btn:hover::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
+.success-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+@media (max-width: 450px) {
+  .success {
+    width: 350px;
+    margin-top: 200px;
+  }
+
+  .success h2 {
+    font-size: var(--fs-2);
+  }
+
+  .success .description {
+    font-size: var(--fs-7);
+  }
+}
+
 @media (min-width: 450px) {
   .clients-item {
     min-width: calc(20% - 10px);
@@ -1529,6 +1613,11 @@ textarea.form-input::-webkit-resizer {
     font-size: 18px;
   }
 
+  .success {
+    width: 550px;
+    margin-top: 200px;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -1673,7 +1762,6 @@ textarea.form-input::-webkit-resizer {
   .blog-banner-box {
     height: 230px;
   }
-
 }
 
 @media (min-width: 1250px) {
@@ -1789,5 +1877,4 @@ textarea.form-input::-webkit-resizer {
   .timeline-text {
     max-width: 700px;
   }
-
 }
