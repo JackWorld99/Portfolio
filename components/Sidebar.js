@@ -18,7 +18,7 @@ const Sidebar = () => {
                         <p className="title">Fresh Graduate</p>
                     </div>
                 </div>
-                <button className="info_more-btn" onClick={() => setClick(!click)}>
+                <button className="info_more-btn" onClick={() => setClick(!click)} aria-label="Show Contacts">
                     <span>Show Contacts</span>
                     <IoChevronDown className="ion-icon"/>
                 </button>
@@ -67,17 +67,17 @@ const Sidebar = () => {
                 <div className="separator"></div>
                 <ul className="social-list">
                     <li className="social-item">
-                        <a href="https://www.linkedin.com/in/wong-wei-jian" className="social-link">
+                        <a href="https://www.linkedin.com/in/wong-wei-jian" aria-label="Linkedin" className="social-link">
                             <IoLogoLinkedin className="ion-icon"/>
                         </a>
                     </li>
                     <li className="social-item">
-                        <a href="https://github.com/JackWorld99" className="social-link">
+                        <a href="https://github.com/JackWorld99" aria-label="Github" className="social-link">
                             <IoLogoGithub className="ion-icon"/>
                         </a>
                     </li>
                     <li className="social-item">
-                        <a href="https://www.utar.edu.my" className="social-link">
+                        <a href="https://www.utar.edu.my" aria-label="UTAR" className="social-link">
                             <IoSchool className="ion-icon"/>
                         </a>
                     </li>

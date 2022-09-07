@@ -9,6 +9,8 @@ const Meta = ({ title, keywords, description }) => {
             <meta name='keywords' content={keywords} />
             <meta name='description' content={description} />
             <link rel='icon' href='/favicon.ico' />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
             <title>{title}</title>
         </Head>
     )
