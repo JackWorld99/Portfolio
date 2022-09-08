@@ -7,43 +7,43 @@
          "alt": "Software Engineer Icon"
       },
       {
-         "id": 1,
+         "id": 2,
          "name": "Software Architect",
          "img": "software-architect.png",
          "alt": "Software Architect Icon"
       },
       {
-         "id": 1,
+         "id": 3,
          "name": "Junior Programmer",
          "img": "programmer.png",
          "alt": "Programmer Icon"
       },
       {
-         "id": 1,
+         "id": 4,
          "name": "Analyst Programmer",
          "img": "analyst.png",
          "alt": "Analyst Programmer Icon"
       },
       {
-         "id": 1,
+         "id": 5,
          "name": "Software Quality Engineer",
          "img": "quality-assurance.png",
          "alt": "Software Quality Engineer Icon"
       },
       {
-         "id": 1,
+         "id": 6,
          "name": "Software Tester",
          "img": "software-tester.png",
          "alt": "Software Tester Icon"
       },
       {
-         "id": 1,
+         "id": 7,
          "name": "Web Developer",
          "img": "web-developer.png",
          "alt": "Web Developer Icon"
       },
       {
-         "id": 1,
+         "id": 8,
          "name": "Mobile Developer",
          "img": "mobile-developer.png",
          "alt": "Mobile Developer Icon"
@@ -89,7 +89,7 @@
          "name": "Ecommerce Sanity Stripe",
          "url": "https://github.com/JackWorld99/Ecommerce-Sanity-Stripe",
          "description": "This is an E-commerce application built with Nextjs, Sanity.io, and Stripe. A fully responsive Modern Full Stack Ecommerce application with cart and payments functionality. ",
-         "img": "Ecommerce Sanity Stripe.gif",
+         "img": "Ecommerce Sanity Stripe.png",
          "category": "React"
       },
       {
@@ -97,7 +97,7 @@
          "name": "React Budget Planner",
          "url": "https://github.com/JackWorld99/React-Budget-Planner",
          "description": "Build with React, it's an application that helps you to know exactly where your money is being spent.",
-         "img": "React Budget Planner.gif",
+         "img": "React Budget Planner.png",
          "category": "React"
       },
       {
@@ -113,7 +113,7 @@
          "name": "Puppeteer Book Library",
          "url": "https://github.com/JackWorld99/Puppeteer-Book-Library",
          "description": "Using a web automation tool -- 'Puppeteer' to find a book from an online book library.",
-         "img": "Puppeteer Book Library.gif",
+         "img": "Puppeteer Book Library.png",
          "category": "NodeJS"
       },
       {
@@ -121,7 +121,7 @@
          "name": "MERN Expense Tracker",
          "url": "https://github.com/JackWorld99/MERN-Expense-Tracker",
          "description": "Expense Tracker Appbuild with MERN Sack We Dvelopment Famework. It allows you to monitor and categorize different expenses or income.",
-         "img": "MERN Expense Tracker.gif",
+         "img": "MERN Expense Tracker.png",
          "category": "React"
       },
       {
@@ -129,7 +129,7 @@
          "name": "Vue Weight Tracker",
          "url": "https://github.com/JackWorld99/Vue-Weight-Tracker",
          "description": "This is a weight tracker build with Vue js ,composition API and Vite. This weight tracker will assist you in weight control and helps you to lose weight or reach your weight goal. ",
-         "img": "Vue Weight Tracker.gif",
+         "img": "Vue Weight Tracker.png",
          "category": "Vue"
       },
       {
@@ -137,7 +137,7 @@
          "name": "React Cryptocurrency Price Tracker",
          "url": "https://github.com/JackWorld99/React-Cryptocurrency-Price-Tracker",
          "description": "A simple Cryptocurrency price tracker app using React, Next js and use a Crypto Api to get the data.",
-         "img": "React Cryptocurrency Price Tracker.gif",
+         "img": "React Cryptocurrency Price Tracker.png",
          "category": "React"
       },
       {
@@ -145,7 +145,7 @@
          "name": "File Sharing With Password",
          "url": "https://github.com/JackWorld99/File-Sharing-With-Password",
          "description": "A File Sharing tools build with Node Node Js, Express and MongoDB. It's includes file sharing, password protected files and a download count tracker.The file can only open with the password you set.",
-         "img": "File Sharing With Password.gif",
+         "img": "File Sharing With Password.png",
          "category": "NodeJS"
       },
       {
@@ -153,7 +153,7 @@
          "name": "URL Shortener",
          "url": "https://github.com/JackWorld99/URL-Shortener",
          "description": "Build a URL Shortener Service with Node.js/Express/MongoDB. a Uniform Resource Locator made substantially shorter and still direct to the required page.",
-         "img": "URL Shortener.gif",
+         "img": "URL Shortener.png",
          "category": "NodeJS"
       },
       {
@@ -185,7 +185,7 @@
          "name": "Python Tools",
          "url": "https://github.com/JackWorld99/Python-Tools",
          "description": "Python Gadget",
-         "img": "Python Tools.gif",
+         "img": "Python Tools.png",
          "category": "Python"
       },
       {
@@ -193,7 +193,7 @@
          "name": "To Do List",
          "url": "https://github.com/JackWorld99/To-Do-List",
          "description": "A tool act as a memory aid. Build a To Do List web app in HTML, CSS and JavaScript.",
-         "img": "To Do List.gif",
+         "img": "To Do List.png",
          "category": "Vanilla HTML"
       },
       {
@@ -201,7 +201,7 @@
          "name": "Text To Speech Converter",
          "url": "https://github.com/JackWorld99/Text-To-Speech-Converter",
          "description": "A technology that converts text to voice. It could be used to create a voiceover for a video or to help people with visual problems to “read” texts.",
-         "img": "Text To Speech Converter.gif",
+         "img": "Text To Speech Converter.png",
          "category": "Vanilla HTML"
       },
       {
@@ -209,7 +209,7 @@
          "name": "Currency Converter",
          "url": "https://github.com/JackWorld99/Currency-Converter",
          "description": "A Currency Converter with HTML CSS and JavaScript. Swap or reverse the two currencies easily by clicking on the exchange icon.",
-         "img": "Currency Converter.gif",
+         "img": "Currency Converter.png",
          "category": "Vanilla HTML"
       },
       {
@@ -217,7 +217,7 @@
          "name": "QR Code Generator",
          "url": "https://github.com/JackWorld99/QR-Code-Generator",
          "description": "Create a QR Code Generator with HTML CSS and JavaScript.",
-         "img": "QR Code Generator.gif",
+         "img": "QR Code Generator.png",
          "category": "Vanilla HTML"
       },
       {
@@ -225,7 +225,7 @@
          "name": "File Downloader",
          "url": "https://github.com/JackWorld99/File-Downloader",
          "description": " Build a file downloader with JavaScript able download image or video.",
-         "img": "File Downloader.gif",
+         "img": "File Downloader.png",
          "category": "Vanilla HTML"
       },
       {
@@ -233,7 +233,7 @@
          "name": "Canvas Clock",
          "url": "https://github.com/JackWorld99/Canvas-Clock",
          "description": "Build an analog clock using HTML Canvas.",
-         "img": "Canvas Clock.gif",
+         "img": "Canvas Clock.png",
          "category": "Vanilla HTML"
       },
       {
@@ -249,7 +249,7 @@
          "name": "Snake Game",
          "url": "https://github.com/JackWorld99/Snake-Game",
          "description": "Build a simple snake game In JavaScript",
-         "img": "Snake Game.gif",
+         "img": "Snake Game.png",
          "category": "Vanilla HTML"
       },
       {
@@ -257,7 +257,7 @@
          "name": "Realtime Crypto",
          "url": "https://github.com/JackWorld99/Realtime-Crypto",
          "description": "Using javascript to get cryptocurrencies, real-time prices, volumes, trading pairs, crypto categories and crypto derivatives, and rank them in order.",
-         "img": "Realtime Crypto.gif",
+         "img": "Realtime Crypto.png",
          "category": "Vanilla HTML"
       },
       {
@@ -265,7 +265,7 @@
          "name": "Laravel Project Listing",
          "url": "https://github.com/JackWorld99/Laravel-Project-Listing",
          "description": "Laravel Project Listing",
-         "img": "Laravel Project Listing.svg",
+         "img": "Laravel Project Listing.png",
          "category": "Laravel"
       },
       {
@@ -273,7 +273,7 @@
          "name": "JackWorld99",
          "url": "https://github.com/JackWorld99/JackWorld99",
          "description": "Hey I'm Jack, this is something about me.",
-         "img": "JackWorld99.gif",
+         "img": "JackWorld99.png",
          "category": "Others"
       },
       {
@@ -281,7 +281,7 @@
          "name": "Image Lazy Loading",
          "url": "https://github.com/JackWorld99/Image-Lazy-Loading",
          "description": "Lazy loading can occur on different moments in the application, but it typically happens on some user interactions such as scrolling and navigation.",
-         "img": "Image Lazy Loading.gif",
+         "img": "Image Lazy Loading.png",
          "category": "Vanilla HTML"
       },
       {
@@ -370,7 +370,7 @@
             },
             {
                "id": 5,
-               "img": "react.svg",
+               "img": "react.png",
                "alt": "React Icon"
             },
             {
@@ -385,17 +385,17 @@
             },
             {
                "id": 8,
-               "img": "react-native.svg",
+               "img": "react-native.png",
                "alt": "React Native Icon"
             },
             {
                "id": 9,
-               "img": "Bootstrap.svg",
+               "img": "bootstrap.png",
                "alt": "Bootstrap Icon"
             },
             {
                "id": 10,
-               "img": "tailwindcss.svg",
+               "img": "tailwindcss.png",
                "alt": "Tailwindcss Icon"
             },
             {
@@ -436,17 +436,17 @@
             },
             {
                "id": 6,
-               "img": "mysql.svg",
+               "img": "mysql.png",
                "alt": "Mysql Icon"
             },
             {
                "id": 7,
-               "img": "mongodb.svg",
+               "img": "mongodb.png",
                "alt": "MongoDB Icon"
             },
             {
                "id": 8,
-               "img": "firebase.svg",
+               "img": "firebase.png",
                "alt": "Firebase Icon"
             },
             {
@@ -477,7 +477,7 @@
             },
             {
                "id": 4,
-               "img": "linux.svg",
+               "img": "linux.png",
                "alt": "Linux Icon"
             },
             {
