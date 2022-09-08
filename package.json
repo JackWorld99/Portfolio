@@ -10,12 +10,10 @@
   },
   "dependencies": {
     "disposable-email": "^0.2.3",
-    "mailchecker": "^5.0.0",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "react-spinners": "^0.13.4",
     "react-toastify": "^9.0.8",
     "swr": "^1.3.0",
     "validator": "^13.7.0"

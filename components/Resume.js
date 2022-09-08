@@ -1,10 +1,26 @@
-import { IoBookOutline, IoSchoolOutline } from "react-icons/io5"
+import React, {useRef, useState} from "react"
+import { IoBookOutline, IoSchoolOutline, IoCloseOutline } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
 import useSWR from 'swr'
 
 const Resume = () => {
     const {page} = useStateContext()
-    const { data} = useSWR('/api/staticdata')
+    const [toggleModal, setToggleModal] = useState(false)
+    const [overlayModal, setOverlayModal] = useState(false)
+    const [jobnName, setJobnName]  = useState()
+    const jobnNameRef = useRef()
+   
+    const handleClick = () => {
+        setJobnName(jobnNameRef.current.innerHTML)
+        modal()
+    }
+
+    const modal = () => {
+        setToggleModal(!toggleModal)
+        setOverlayModal(!overlayModal)
+    }
+
+    const {data} = useSWR('/api/staticdata')
     const parseData = JSON.parse(data)
 
     return (
@@ -40,20 +56,14 @@ const Resume = () => {
                         <section className="blog-posts" style={{margin: "15px 0px"}}>
                             <ul className="blog-posts-list">
                                 <li className="blog-post-item">
-                                    <a>
+                                    <a href="https://my.linkedin.com/company/wepost-sdn-bhd">
                                         <figure className="blog-banner-box">
-                                            <img src="/images/intern.png" alt="Design conferences in 2022" loading="lazy" />
+                                            <img src="/images/intern.webp" alt="Design conferences in 2022" loading="lazy" />
                                         </figure>
                                     </a>
                                 </li>
                             </ul>
                         </section>
-                       
-                        {/* 1. 前端和后端开发，为客服人员提供有用的技术支持和帮助。
-                        2. 优化网页并将测试结果报告给主管。
-                        3. 与同事协作创建新的SQL数据库，提高整体效率，方便日后维护。
-                        4. 执行经理分配的每周职责和项目。
-                        5. 积极参加每周的团队会议，汇报项目的进展情况。 */}
                     </li>
                 </ol>
             </section>
@@ -85,21 +95,43 @@ const Resume = () => {
                     </ul>
                 </section>
             ))}
-            <section className="service">
+            <section className="service" onClick={handleClick}>
                 <h3 className="h3 service-title">Desired Career</h3>
                 <ul className="service-list">
                     {parseData.expectedCareer.map(ec => (
-                        <li className="service-item" key={ec.id}>
+                        <li className="service-item" key={ec.id} style={{cursor: "pointer"}}>
                             <div className="service-icon-box">
-                                <img src={`/images/${ec.img}`} alt={ec.alt} width="40" />
+                                <img src={`/images/${ec.img}`} alt={ec.alt}  style={{width:"40px"}}/>
                             </div>
                             <div className="service-content-box">
-                                <h4 className="h4 service-item-title" style={{color:"#ffdb70"}}>{ec.name}</h4>
+                                <h4 className="h4 service-item-title" style={{color:"#ffdb70"}} ref={jobnNameRef}>{ec.name}</h4>
                             </div>
                         </li>
                     ))}
                 </ul>
             </section>
+
+            <div className={`modal-container ${toggleModal ? "active" : ""}`} >
+                <div className={`overlay ${overlayModal ? "active" : ""}`} onClick={modal}></div>
+                <section className="testimonials-modal">
+                    <button className="modal-close-btn" onClick={modal}>
+                        <IoCloseOutline className="ion-icon"/>
+                    </button>
+                    <div className="modal-content">
+                        <h4 className="h3 modal-title">{jobnName}</h4>
+                        <p><b>Corresponding courses and skills learned in university</b></p>
+                        <div>
+                            <p>
+                                Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                lot of experience
+                                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                consectetur adipiscing
+                                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </article>
     )
 }

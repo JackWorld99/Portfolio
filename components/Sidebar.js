@@ -9,7 +9,7 @@ const Sidebar = () => {
         <aside className={`sidebar ${click ? "active" : ""}`}>
             <div className="sidebar-info">
                 <figure className="avatar-box">
-                    <img src="/images/my-avatar.png" alt="My avatar" width="80" />
+                    <img src="/images/my-avatar.png" alt="My avatar" width="80" loading="lazy"/>
                 </figure>
                 <div className="info-content">
                     <h1 className="name" title="Wong Wei Jian">Wong Wei Jian</h1>
