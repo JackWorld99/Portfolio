@@ -1,3 +1,4 @@
+import { server } from '../config'
 import { Sidebar, Navbar, About, Resume, Portfolio, Blog, Contact } from '../components'
 import { SWRConfig } from 'swr'
 
@@ -19,7 +20,7 @@ const Home = ({ fallback }) => {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch('http://localhost:3000/api/staticdata')
+  const res = await fetch(`${server}/api/staticdata`)
   const staticdata = await res.json()
   
   return {

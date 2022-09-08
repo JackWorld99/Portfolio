@@ -1,10 +1,10 @@
 import React from "react"
+import { server } from '../config'
 import { IoPaperPlane } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import validator from "validator"
-const MailChecker = require('mailchecker')
 const disposable = require('disposable-email')
 
 const Contact = () => {
@@ -44,7 +44,7 @@ const Contact = () => {
         }
 
         const normalize = validator.normalizeEmail(email)
-        const disposableEmail = MailChecker.isValid(normalize) && disposable.validate(normalize)
+        const disposableEmail = disposable.validate(normalize)
 
         if(!disposableEmail) {
             e.preventDefault()
@@ -57,10 +57,10 @@ const Contact = () => {
             e.target.Email.value = ""
             toast.info('Be patient, the email is being sent....', toastSetup)
             toast.warning("Please don't refresh the page", toastSetup)
+        }else{
+            e.preventDefault() 
+            return inputError("Something went wrong, please try again !")
         }
-
-        e.preventDefault() 
-        return inputError("Something went wrong, please try again !")
     }
 
     return (
@@ -84,7 +84,7 @@ const Contact = () => {
                     <textarea name="Message" className="form-input" placeholder="Your Message"></textarea>
                     <input type="text" name="_honey" style={{display:"none"}} />
                     <input type="hidden" name="_template" value="table" />
-                    <input type="hidden" name="_next" value="https://localhost/success"></input>
+                    <input type="hidden" name="_next" value={`${server}/success`}></input>
                     <button className="form-btn">
                         <IoPaperPlane className="ion-icon"/>
                         <span>Send Message</span>
