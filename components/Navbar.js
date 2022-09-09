@@ -17,14 +17,14 @@ const Navbar = () => {
                     <button className={`navbar-link ${links === "about" ? "active" : ""}`} onClick={handleClick}>About</button>
                 </li>
                 <li className="navbar-item">
-                    <button className={`navbar-link ${links === "resume" ? "active" : ""}`} onClick={handleClick}>Resume</button>
+                    <button className={`navbar-link ${links === "skills" ? "active" : ""}`} onClick={handleClick}>Skills</button>
                 </li>
                 <li className="navbar-item">
-                    <button className={`navbar-link ${links === "portfolio" ? "active" : ""}`} onClick={handleClick}>Portfolio</button>
+                    <button className={`navbar-link ${links === "projects" ? "active" : ""}`} onClick={handleClick}>Projects</button>
                 </li>
-                <li className="navbar-item">
+                {/* <li className="navbar-item">
                     <button className={`navbar-link ${links === "blog" ? "active" : ""}`} onClick={handleClick}>Blog</button>
-                </li>
+                </li> */}
                 <li className="navbar-item">
                     <button className={`navbar-link ${links === "contact" ? "active" : ""}`} onClick={handleClick}>Contact</button>
                 </li>

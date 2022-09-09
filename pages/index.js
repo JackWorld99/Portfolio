@@ -12,7 +12,7 @@ const Home = ({ fallback }) => {
           <About />
           <Resume />
           <Portfolio/>
-          <Blog />
+          {/* <Blog /> */}
           <Contact />
         </div>
     </SWRConfig>
@@ -22,7 +22,7 @@ const Home = ({ fallback }) => {
 export const getStaticProps = async () => {
   const res = await fetch(`${server}/api/staticdata`)
   const staticdata = await res.json()
-  
+
   return {
     props: {
       fallback: {

@@ -1,7 +1,7 @@
-import React, {useRef, useState} from "react"
-import { IoMdDownload } from "react-icons/io"
+import React from "react"
 import { IoSchoolOutline } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
+// import { IoMdDownload } from "react-icons/io"
 
 const About = () => {
     const {page} = useStateContext()
@@ -54,19 +54,17 @@ const About = () => {
                         <p className="timeline-text">
                             UTAR&ensp;-&ensp;&ldquo;Universiti Tak Ada Rehat&rdquo; in Malay, which means it is a University without rest, the mantra often used by the lecturer of utar when giving assignments. The long term is 14 weeks, and the short term is 7 weeks. An average of five subjects are taken in a semester, and each subject has more than one assignment. It is a very fast paced university, and the schedule is full every day. I am either doing assignments or preparing for tests every day. although every day was very busy without university life, but every day was very fulfilling. Fortunately, I survived and finally graduated.
                         </p>
-                       <section className="blog-posts" style={{margin: "15px 0px"}}>
+                       <section className="blog-posts" style={{margin: "15px 0px 30px 0px"}}>
                             <ul className="blog-posts-list">
                                 <li className="blog-post-item">
                                     <a href="https://www.utar.edu.my">
                                         <figure className="blog-banner-box">
-                                            <img src="/images/university.webp" alt="Design conferences in 2022" style={{width:"100%",height:"100%"}} loading="lazy" />
+                                            <img src="/images/university.webp" alt="Design conferences in 2022" loading="lazy" />
                                         </figure>
                                     </a>
                                 </li>
                             </ul>
                         </section>
-                        <span className="skill-learn">Courses Completed</span>
-                        <a href="https://study.utar.edu.my/programme-structure-software-engineering.php" style={{color: "white"}}>- Learn more...</a>
                     </li>
                     <li className="timeline-item">
                         <a href="https://www.foonyew.edu.my/">
@@ -83,7 +81,7 @@ const About = () => {
                                 <li className="blog-post-item">
                                     <a href="https://www.foonyew.edu.my/">
                                         <figure className="blog-banner-box">
-                                            <img src="/images/highSchool.webp" alt="Design conferences in 2022" style={{width:"100%",height:"100%"}} loading="lazy" />
+                                            <img src="/images/highSchool.webp" alt="Design conferences in 2022" loading="lazy" />
                                         </figure>
                                     </a>
                                 </li>

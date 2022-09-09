@@ -58,7 +58,7 @@ const Portfolio = () => {
                                     <div className="project-item-icon-box">
                                         <IoEyeOutline className="ion-icon"/>
                                     </div>
-                                    <img src={`/projectImg/${project.img}`} alt={project.name.toLocaleLowerCase()} loading="lazy" />
+                                    <img src={`/images/${project.img}`} alt={project.name.toLocaleLowerCase()} loading="lazy" />
                                 </figure>
                                 <h3 className="project-title">{project.name}</h3>
                                 <p className="project-category">{project.category}</p>

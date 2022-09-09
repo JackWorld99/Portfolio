@@ -5,9 +5,9 @@ import { StateContext } from '../context/StateContext'
 function MyApp({ Component, pageProps }) {
   return (
     <StateContext>
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </StateContext>
   )
 }
