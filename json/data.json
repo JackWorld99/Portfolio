@@ -1,54 +1,4 @@
 {
-   "expectedCareer": [
-      {
-         "id": 1,
-         "name": "Software Engineer",
-         "img": "engineer.png",
-         "alt": "Software Engineer Icon"
-      },
-      {
-         "id": 2,
-         "name": "Software Architect",
-         "img": "software-architect.png",
-         "alt": "Software Architect Icon"
-      },
-      {
-         "id": 3,
-         "name": "Junior Programmer",
-         "img": "programmer.png",
-         "alt": "Programmer Icon"
-      },
-      {
-         "id": 4,
-         "name": "Analyst Programmer",
-         "img": "analyst.png",
-         "alt": "Analyst Programmer Icon"
-      },
-      {
-         "id": 5,
-         "name": "Software Quality Engineer",
-         "img": "quality-assurance.png",
-         "alt": "Software Quality Engineer Icon"
-      },
-      {
-         "id": 6,
-         "name": "Software Tester",
-         "img": "software-tester.png",
-         "alt": "Software Tester Icon"
-      },
-      {
-         "id": 7,
-         "name": "Web Developer",
-         "img": "web-developer.png",
-         "alt": "Web Developer Icon"
-      },
-      {
-         "id": 8,
-         "name": "Mobile Developer",
-         "img": "mobile-developer.png",
-         "alt": "Mobile Developer Icon"
-      }
-   ],
    "projectCategory": [
       {
          "id": 1,
@@ -496,6 +446,183 @@
                "alt": "Docker Icon"
             }
          ]
+      }
+   ],
+   "courses": [
+      {
+         "id": 1,
+         "name": "Web Application Development",
+         "skill": "HTML, Javascript, PHP, CSS, Ajax, Xampp, Wampserver"
+      },
+      {
+         "id": 2,
+         "name": "Advanced Web Application Development",
+         "skill": "MVC, Laravel, Bootstrap, Mysql, Postman"
+      },
+      {
+         "id": 3,
+         "name": "Wireless Application Development",
+         "skill": "React Native, Expo, Android Studio, Nodejs, SQLite"
+      },
+      {
+         "id": 4,
+         "name": "Database System Fundamentals",
+         "skill": "SQL, Oracle"
+      },
+      {
+         "id": 5,
+         "name": "Advanced Database Systems",
+         "skill": "RDBMS, NoSQL, MongoDB"
+      },
+      {
+         "id": 6,
+         "name": "TCP/IP Network Fundamentals",
+         "skill": "Cisco Packet Tracer"
+      },
+      {
+         "id": 7,
+         "name": "TCP/IP Network Application Development",
+         "skill": "Python, Flask, wWeb socket, Multithreading"
+      },
+      {
+         "id": 8,
+         "name": "Operating Systems",
+         "skill": ""
+      },
+      {
+         "id": 9,
+         "name": "Server Configuration And Management",
+         "skill": "Linux, Ubuntu, Shell, virtualbox, traceroute, netstat SSH NFS SAMBA"
+      },
+      {
+         "id": 10,
+         "name": "Network Security Management",
+         "skill": "Kali linux, Penetration Test"
+      },
+      {
+         "id": 11,
+         "name": "Programming And Problem Solving",
+         "skill": "C++"
+      },
+      {
+         "id": 12,
+         "name": "Object-Oriented Application Development",
+         "skill": "C#"
+      },
+      {
+         "id": 13,
+         "name": "Problem Solving with Data Structures And Algorithms",
+         "skill": "Java"
+      },
+      {
+         "id": 14,
+         "name": "Software and Requirements",
+         "skill": "SDLC, RAP, UP, UML, Use case, Activity, Context, Data flow diagram"
+      },
+      {
+         "id": 15,
+         "name": "Probability and Statistics for Computing",
+         "skill": ""
+      },
+      {
+         "id": 16,
+         "name": "Introduction to Computer Organisation and Architecture",
+         "skill": ""
+      },
+      {
+         "id": 17,
+         "name": "Computer Ethics and Professional Responsibility",
+         "skill": ""
+      },
+      {
+         "id": 18,
+         "name": "Software Design",
+         "skill": "Use case, Class, Object, Sequence Diagram"
+      },
+      {
+         "id": 19,
+         "name": "Human Computer Interaction Design",
+         "skill": "Axure"
+      },
+      {
+         "id": 20,
+         "name": "Software Testing",
+         "skill": "Java, Selenium, UAT, Unit, Integration Testing"
+      },
+      {
+         "id": 21,
+         "name": "Software Project Management",
+         "skill": ""
+      },
+      {
+         "id": 22,
+         "name": "Software Construction and Configuration",
+         "skill": "Docker, Git, Github, Jenkins"
+      },
+      {
+         "id": 23,
+         "name": "Software Quality Assurance",
+         "skill": "User experience, Functionality, Performance, Compatibility, Security testing, Test management"
+      },
+      {
+         "id": 24,
+         "name": "Software Entrepreneurship",
+         "skill": ""
+      },
+      {
+         "id": 25,
+         "name": "Principles of International Business",
+         "skill": ""
+      }
+   ],
+   "expectedCareer": [
+      {
+         "id": 1,
+         "name": "Software Engineer",
+         "img": "engineer.png",
+         "alt": "Software Engineer Icon"
+      },
+      {
+         "id": 2,
+         "name": "Software Architect",
+         "img": "software-architect.png",
+         "alt": "Software Architect Icon"
+      },
+      {
+         "id": 3,
+         "name": "Junior Programmer",
+         "img": "programmer.png",
+         "alt": "Programmer Icon"
+      },
+      {
+         "id": 4,
+         "name": "Analyst Programmer",
+         "img": "analyst.png",
+         "alt": "Analyst Programmer Icon"
+      },
+      {
+         "id": 5,
+         "name": "Software Quality Engineer",
+         "img": "quality-assurance.png",
+         "alt": "Software Quality Engineer Icon"
+      },
+      {
+         "id": 6,
+         "name": "Software Tester",
+         "img": "software-tester.png",
+         "alt": "Software Tester Icon"
+      },
+      {
+         "id": 7,
+         "name": "Web Developer",
+         "img": "web-developer.png",
+         "alt": "Web Developer Icon"
+      },
+      {
+         "id": 8,
+         "name": "Mobile Developer",
+         "img": "mobile-developer.png",
+         "alt": "Mobile Developer Icon"
       }
    ]
 }

@@ -1,25 +1,10 @@
-import React, {useRef, useState} from "react"
-import { IoBookOutline, IoSchoolOutline, IoCloseOutline } from "react-icons/io5"
+import React from "react"
+import { IoBookOutline } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
 import useSWR from 'swr'
 
 const Resume = () => {
     const {page} = useStateContext()
-    const [toggleModal, setToggleModal] = useState(false)
-    const [overlayModal, setOverlayModal] = useState(false)
-    const [jobnName, setJobnName]  = useState()
-    const jobnNameRef = useRef()
-   
-    const handleClick = () => {
-        setJobnName(jobnNameRef.current.innerHTML)
-        modal()
-    }
-
-    const modal = () => {
-        setToggleModal(!toggleModal)
-        setOverlayModal(!overlayModal)
-    }
-
     const {data} = useSWR('/api/staticdata')
     const parseData = JSON.parse(data)
 
@@ -33,20 +18,21 @@ const Resume = () => {
                     <div className="icon-box">
                         <IoBookOutline className="ion-icon"/>
                     </div>
-                    <h3 className="h3">Experience</h3>
+                    <h3 className="h3">Work Experience</h3>
                 </div>
                 <ol className="timeline-list">
                     <li className="timeline-item">
                         <h4 className="h4 timeline-item-title"> Internship - Web Developer</h4>
                         <span>Oct 2020&ensp;-&ensp;Jan 2021</span>
                         <p className="timeline-text">
-                            During my industrial training/internship, I worked as a <b>Web Developer</b> in a shipping/logistics company call <b>Wepost</b>. Job scope conducts <b>Frontend Web Design</b> and <b>Backend Web Development</b>. 
+                            During my industrial training/internship, I worked as a <b>Web Developer</b> in a shipping/logistics company call <b>Wepost Ecommerce</b>. Job scope conducts <b>Frontend Web Design</b> and <b>Backend Web Development</b>. 
                         </p>
                         <ul className="intern-learn"> 
                             <li>Being assigned to the e-commerce team and using algorithms to group packages that match the products purchased by the user into appropriate containers, such as sea and air freight, it will make it easier for customer service staff to check the status of packages instantly, which will increase sales.</li>
                             <li>Participated in the development of a questionnaire to give away coupons during the Double 11 and Double 12 shopping festivals.</li>
                             <li>Communicate with customer service staff to understand the problems they face when using the backend application, solve technical problems, provide technical support, optimise the operating interface and customise new features.</li>
                             <li>Participate in the development of a referral program page where users can earn corresponding rebate benefits and points by referring apps.</li>
+                            <li>Develop reports and charts for the settlement of cash rebates, with the option for the finance department administrator to export CSV on a yearly, monthly or daily basis as required.</li>
                             <li>Collaborate with colleagues to create new SQL databases to improve overall efficiency and facilitate future maintenance.</li>
                             <li>Actively participate in weekly team meetings and report on the progress of the project.</li>
                             <li>Perform weekly responsibilities and projects assigned by the manager.</li>
@@ -89,49 +75,41 @@ const Resume = () => {
                     <ul className="clients-list has-scrollbar">
                         {s.data.map(d => (
                             <li className="clients-item" key={d.id}>
-                                <img src={`/skillIcon/${d.img}`} alt={d.alt} />
+                                <img src={`/images/${d.img}`} alt={d.alt} />
                             </li>
                         ))}
                     </ul>
                 </section>
             ))}
-            <section className="service" onClick={handleClick}>
+            <section className="skill" style={{marginBottom: "30px", cursor: "pointer"}}>
+                <h3 className="h3 skills-title">Courses Completed</h3>
+                <details style={{color: "white"}}>
+                    <summary>Show more...</summary>
+                        <ul className="intern-learn">
+                            {parseData.courses.map(c => (
+                                <li key={c.id}>
+                                    <span style={{color: "var(--vegas-gold)"}}><b>{c.name}</b></span>
+                                    <p>{c.skill ? c.skill : ""}</p>
+                                </li>
+                            ))}
+                        </ul>
+                </details>
+            </section>
+            <section className="service">
                 <h3 className="h3 service-title">Desired Career</h3>
                 <ul className="service-list">
                     {parseData.expectedCareer.map(ec => (
-                        <li className="service-item" key={ec.id} style={{cursor: "pointer"}}>
+                        <li className="service-item" key={ec.id}>
                             <div className="service-icon-box">
                                 <img src={`/images/${ec.img}`} alt={ec.alt}  style={{width:"40px"}}/>
                             </div>
                             <div className="service-content-box">
-                                <h4 className="h4 service-item-title" style={{color:"#ffdb70"}} ref={jobnNameRef}>{ec.name}</h4>
+                                <h4 className="h4 service-item-title" style={{color:"#ffdb70"}}>{ec.name}</h4>
                             </div>
                         </li>
                     ))}
                 </ul>
             </section>
-
-            <div className={`modal-container ${toggleModal ? "active" : ""}`} >
-                <div className={`overlay ${overlayModal ? "active" : ""}`} onClick={modal}></div>
-                <section className="testimonials-modal">
-                    <button className="modal-close-btn" onClick={modal}>
-                        <IoCloseOutline className="ion-icon"/>
-                    </button>
-                    <div className="modal-content">
-                        <h4 className="h3 modal-title">{jobnName}</h4>
-                        <p><b>Corresponding courses and skills learned in university</b></p>
-                        <div>
-                            <p>
-                                Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                                lot of experience
-                                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                                consectetur adipiscing
-                                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </div>
         </article>
     )
 }
