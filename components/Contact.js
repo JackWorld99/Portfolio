@@ -21,6 +21,7 @@ const Contact = () => {
         const validateEmail = validator.isEmail(email)
         
         const toastSetup = {position: "bottom-right", autoClose: 3000, hideProgressBar: false, closeOnClick: true, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"}
+        const waitingToast = {position: "bottom-right", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: false, draggable: false, progress: undefined, theme: "dark"}
         const inputError = (errorMessage) => toast.error(errorMessage, toastSetup)
 
         if(validateName){
@@ -55,8 +56,8 @@ const Contact = () => {
             e.target.Name.value = ""
             e.target.Message.value = ""
             e.target.Email.value = ""
-            toast.info('Be patient, the email is being sent....', toastSetup)
-            toast.warning("Please don't refresh the page", toastSetup)
+            toast.info('Be patient, the email is being sent....', waitingToast)
+            toast.warning("Please don't refresh the page", waitingToast)
         }else{
             e.preventDefault() 
             return inputError("Something went wrong, please try again !")
@@ -76,7 +77,7 @@ const Contact = () => {
             </section>
             <section className="contact-form">
                 <h3 className="h3 form-title">Contact Me</h3>
-                <form className="form" action="https://formsubmit.co/eb1f59f740b3c141e8f7346e21d2e1ad" method="POST" onSubmit={sendEmail} >
+                <form className="form" action={process.env.NEXT_PUBLIC_EMAIL} method="POST" onSubmit={sendEmail} >
                     <div className="input-wrapper">
                         <input type="text" name="Name" className="form-input" placeholder="Name" />
                         <input type="text" name="Email" className="form-input" placeholder="Email Address"/>
