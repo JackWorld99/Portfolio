@@ -53,9 +53,6 @@ const Contact = () => {
         }
 
         if(!validateName && !validateMessage && validateEmail && disposableEmail) {
-            e.target.Name.value = ""
-            e.target.Message.value = ""
-            e.target.Email.value = ""
             toast.info('Be patient, the email is being sent....', waitingToast)
             toast.warning("Please don't refresh the page", waitingToast)
         }else{
