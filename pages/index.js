@@ -21,8 +21,6 @@ const Home = ({ fallback }) => {
 }
 
 export const getStaticProps = async () => {
-  // const res = await fetch(`${server}/api/staticdata`)
-  // const staticdata = await res.json()
   const jsonDirectory = path.join(process.cwd(), 'json')
   const staticdata = await fs.readFile(jsonDirectory + '/data.json', 'utf8')
 
