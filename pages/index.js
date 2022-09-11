@@ -1,6 +1,8 @@
 import { server } from '../config'
 import { Sidebar, Navbar, About, Resume, Portfolio, Blog, Contact } from '../components'
 import { SWRConfig } from 'swr'
+import path from 'path'
+import { promises as fs } from 'fs'
 
 const Home = ({ fallback }) => {
   return (
@@ -12,7 +14,6 @@ const Home = ({ fallback }) => {
           <About />
           <Resume />
           <Portfolio/>
-          {/* <Blog /> */}
           <Contact />
         </div>
     </SWRConfig>
@@ -20,8 +21,10 @@ const Home = ({ fallback }) => {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/staticdata`)
-  const staticdata = await res.json()
+  // const res = await fetch(`${server}/api/staticdata`)
+  // const staticdata = await res.json()
+  const jsonDirectory = path.join(process.cwd(), 'json')
+  const staticdata = await fs.readFile(jsonDirectory + '/data.json', 'utf8')
 
   return {
     props: {
