@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import { server } from '../config'
 import { IoPaperPlane } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
@@ -9,6 +9,7 @@ const disposable = require('disposable-email')
 
 const Contact = () => {
     const {page} = useStateContext()
+    const [message, setMessage] = useState("")
     
     const sendEmail = (e) => {
         const name = e.target.Name.value
@@ -53,8 +54,9 @@ const Contact = () => {
         }
 
         if(!validateName && !validateMessage && validateEmail && disposableEmail) {
-            toast.info('Be patient, the email is being sent....', waitingToast)
-            toast.warning("Please don't refresh the page", waitingToast)
+            setMessage("⚠️ If the mail is not sent after 30 seconds, it could be the mail service provider has crashed, please send your mail directly to jackwong0326@gmail.com. Sorry for inconvenience.")
+            toast.info("Be patient, the email is being sent...", waitingToast)
+            toast.warning("Please don't refresh the page.", waitingToast)
         }else{
             e.preventDefault() 
             return inputError("Something went wrong, please try again !")
@@ -74,6 +76,7 @@ const Contact = () => {
             </section>
             <section className="contact-form">
                 <h3 className="h3 form-title">Contact Me</h3>
+                {message && <p style={{color: "var(--vegas-gold)", marginBottom: "15px"}}><b>{message}</b></p>}
                 <form className="form" action={process.env.NEXT_PUBLIC_EMAIL} method="POST" onSubmit={sendEmail} >
                     <div className="input-wrapper">
                         <input type="text" name="Name" className="form-input" placeholder="Name" />
@@ -88,6 +91,7 @@ const Contact = () => {
                         <span>Send Message</span>
                     </button>
                 </form>
+                
             </section>
             <ToastContainer />
         </article>
