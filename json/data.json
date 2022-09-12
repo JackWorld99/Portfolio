@@ -47,7 +47,7 @@
          "name": "Portfolio",
          "url": "https://github.com/JackWorld99/Portfolio",
          "description": "A personal portfolio website that provides information about me, a compilation of relevant work samples and documents gathered during school years and presented in a structured manner, and how to contact me.",
-         "img": "Portfolio.png",
+         "img": "portfolio.png",
          "category": "React"
       },
       {

@@ -23,7 +23,7 @@ const Portfolio = () => {
     return (
         <article className={`portfolio ${page === "projects" ? "active" : ""}`}>
             <header>
-                <h2 className="h2 article-title">Portfolio</h2>
+                <h2 className="h2 article-title">Projects</h2>
             </header>
             <section className="projects">
                 <ul className="filter-list">
