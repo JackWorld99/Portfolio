@@ -8,6 +8,12 @@ const Meta = ({ title, keywords, description }) => {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="keywords" content={keywords} />
             <meta name="description" content={description} />
+
+            {/* Google / Search Engine Tags */}
+            <meta itemProp="name" content={title} />
+            <meta itemProp="description" content={description} />
+            <meta itemProp="image" content="/images/portfolio.png" />
+
             <link rel="icon" href="/images/my-logo.ico" />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
@@ -17,7 +23,7 @@ const Meta = ({ title, keywords, description }) => {
 }
 
 Meta.defaultProps = {
-    title: 'WJ Portfolio',
+    title: 'WWJ Portfolio',
     keywords: 'Wong Wei Jian, JackWorld99, Personal Portfolio',
     description: 'A personal portfolio website that provides information about me, a compilation of relevant work samples and documents gathered during school years and presented in a structured manner, and how to contact me.',
 }
