@@ -1,9 +1,7 @@
 <p align="center"> 
-<img src="public/demo/banner.png" alt="banner"/>
+<img src="demo/banner.png" alt="banner"/>
 <h2 align="center">🎉 WWJ Portfolio 👨‍💻</h2>
 </p>
-
----
 
 ### 🔎 What is this site for❓
 
@@ -11,7 +9,7 @@ A personal portfolio website that provides information about me, a compilation o
 
 ### 📢 Features Demo 
 
-![](public/demo/demo.gif)
+![](demo/demo.gif)
 
 ---
 
