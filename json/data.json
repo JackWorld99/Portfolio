@@ -51,7 +51,7 @@
          "category": "React"
       },
       {
-         "id": 4,
+         "id": 3,
          "name": "React Travel Advisor",
          "url": "https://github.com/JackWorld99/React-Travel-Advisor",
          "description": "A Travel Companion Application with Geolocation, Google Maps API, Searching for places, Fetching restaurants, hotels and attractions based on location from specialized Rapid APIs and data filtering.",
@@ -474,7 +474,7 @@
       },
       {
          "id": 4,
-         "name": "Database System Fundamentals",
+         "name": "Database Management Systems",
          "skill": "SQL, Oracle"
       },
       {
@@ -490,22 +490,22 @@
       {
          "id": 7,
          "name": "TCP/IP Network Application Development",
-         "skill": "Python, Flask, wWeb socket, Multithreading"
+         "skill": "Python, Flask, Web socket, Multithreading"
       },
       {
          "id": 8,
          "name": "Operating Systems",
-         "skill": ""
+         "skill": "Ubuntu, Virtualbox"
       },
       {
          "id": 9,
          "name": "Server Configuration And Management",
-         "skill": "Linux, Ubuntu, Shell, virtualbox, traceroute, netstat SSH NFS SAMBA"
+         "skill": "Linux, Ubuntu, Shell, Virtualbox, Traceroute, Netstat SSH NFS SAMBA"
       },
       {
          "id": 10,
          "name": "Network Security Management",
-         "skill": "Kali linux, Penetration Test"
+         "skill": "Kali Linux, Penetration Test"
       },
       {
          "id": 11,
@@ -515,7 +515,7 @@
       {
          "id": 12,
          "name": "Object-Oriented Application Development",
-         "skill": "C#"
+         "skill": "C#, OOP"
       },
       {
          "id": 13,
@@ -530,7 +530,7 @@
       {
          "id": 15,
          "name": "Probability and Statistics for Computing",
-         "skill": ""
+         "skill": "Statistical, Probability, Discrete Random Variables & Distributions, Continuous Distribution, Regression"
       },
       {
          "id": 16,

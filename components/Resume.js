@@ -28,16 +28,19 @@ const Resume = () => {
                             During my industrial training/internship, I worked as a <b>Web Developer</b> in a shipping/logistics company call <b>Wepost Ecommerce</b>. Job scope conducts <b>Frontend Web Design</b> and <b>Backend Web Development</b>. 
                         </p>
                         <ul className="intern-learn"> 
-                            <li>Being assigned to the e-commerce team and using algorithms to group packages that match the products purchased by the user into appropriate containers, such as sea and air freight, it will make it easier for customer service staff to check the status of packages instantly, which will increase sales.</li>
-                            <li>Participated in the development of a questionnaire to give away coupons during the Double 11 and Double 12 shopping festivals.</li>
-                            <li>Communicate with customer service staff to understand the problems they face when using the backend application, solve technical problems, provide technical support, optimise the operating interface and customise new features.</li>
-                            <li>Participate in the development of a referral program page where users can earn corresponding rebate benefits and points by referring apps.</li>
-                            <li>Collaborate with colleagues to create new MySQL databases to improve overall efficiency and facilitate future maintenance.</li>
+                            <li>Being assigned to the e-commerce team and using algorithms to group packages that match the products purchased by the user into appropriate containers, such as sea and air freight. Increase sales by making it easier for customer service staff to instantly check the status of packages.</li>
+                            <li>Created accessible, responsive, and functional user interfaces to allow visitors on any device to have the same perfect user experience.</li>
+                            <li>Helped to achieve a consistent look and visual theme across the website by promoting uniform fonts, formatting, images, and layout.</li>
+                            <li>Creating models within an MVC application that implements the business logic necessary to satisfy business requirements.</li>
                             <li>Built API following RESTful standards to allow users to submit information by storing it in MySQL databases.</li>
+                            <li>Communicate with customer service staff to understand their problems when using the backend application, solve technical issues, provide technical support, optimize the operating interface and customize new features.</li>
+                            <li>Participate in the development of a referral program page where users can earn corresponding rebate benefits and points by referring apps.</li>
+                            <li>Participated in the development of a questionnaire to give away coupons during the Double 11 and Double 12 shopping festivals.</li>
+                            <li>Collaborate with colleagues to create new MySQL databases to improve overall efficiency and facilitate future maintenance.</li>
                             <li>Develop reports and charts for the settlement of cash rebates, with the option for the finance department administrator to export CSV on a yearly, monthly or daily basis as required.</li>
                             <li>Actively participate in weekly team meetings and report on the progress of the project assigned by the manager.</li>
                         </ul>
-                        <span className="skill-learn">Learned Skills<p className="timeline-text" style={{display: "inline"}}><b>&ensp;·&ensp;Laravel&ensp;·&ensp;HTML&ensp;·&ensp;JavaScript&ensp;·&ensp;CSS&ensp;·&ensp;jQuery&ensp;·&ensp;MySQL&ensp;·&ensp;RESTAPI&ensp;·&ensp;Bootstrap&ensp;·&ensp;Git</b></p></span>
+                        <span className="skill-learn">Learned Skills<p className="timeline-text" style={{display: "inline"}}><b>&ensp;·&ensp;Laravel&ensp;·&ensp;HTML&ensp;·&ensp;JavaScript&ensp;·&ensp;CSS&ensp;·&ensp;jQuery&ensp;·&ensp;MySQL&ensp;·&ensp;Bootstrap&ensp;·&ensp;Git</b></p></span>
                         
                         <section className="blog-posts" style={{margin: "15px 0px"}}>
                             <ul className="blog-posts-list">
