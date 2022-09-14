@@ -7,6 +7,8 @@
 
 A personal portfolio website that provides information about me, a compilation of relevant work samples and documents gathered during school years and presented in a structured manner, and how to contact me.
 
+---
+
 ### 📢 Features Demo 
 
 ![](demo/demo.gif)
@@ -27,6 +29,11 @@ The quickest way to get started as shown below:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+---
+
+### 📧 Email service provider - [FormSubmit](https://formsubmit.co "FormSubmit")
+FormSubmit is a form backend, API and email service for HTML forms. It sends your site's form submission directly into your inbox without a need for any backend code or SMTP setup.
 
 ---
 
