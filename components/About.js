@@ -13,7 +13,7 @@ const About = () => {
             </header>
             <section className="about-text">
                 <p>
-                    Hi, I&apos;m Wei Jian, you can call me Jack as well. I&apos;m a rookie fresh out of Software Engineering. I&apos;m a delusional rookie who wants to change the world with code.
+                    Hi, I&apos;m Wei Jian, you can call me Jack as well. I&apos;m a rookie fresh out of Software Engineering, a delusional rookie who wants to change the world with code.
                 </p>
                 <p>
                     To be honest, I was a computer idiot before high school. Although I had a computer at home, my parents restricted my access to the Internet from a young age because it was full of all kinds of violent and pornographic content. I only have the opportunity to use the computer when I have a computer class at school. At that time I didn&apos;t even know how to shut down the computer. I started to use the computer unrestricted after I graduated from high school. You can imagine how devastated I was, when I first got into programming in university, the code was like alien text to me. My grades in the first semester of university almost ended in failing grades. 
