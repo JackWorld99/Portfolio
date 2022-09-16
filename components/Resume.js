@@ -41,7 +41,7 @@ const Resume = () => {
                         <details style={{color: "white", cursor: "pointer"}}>
                             <summary>Show more...</summary>
                             <ul className="intern-learn"> 
-                                <li>Being assigned to the E-commerce team and using algorithms to group packages that match the products purchased by the user into appropriate containers, such as sea and air freight. Increase sales by making it easier for customer service staff to instantly check the status of packages.</li>
+                                <li>Being assigned to the Ecommerce team and using algorithms to group packages that match the products purchased by the user into appropriate containers, such as sea and air freight. Increase sales by making it easier for customer service staff to instantly check the status of packages.</li>
                                 <li>Communicate with customer service staff to understand their problems when using the backend application, solve technical issues, provide technical support, optimize the operating interface and customize new features.</li>
                                 <li>Participate in the development of a referral program page where users can earn corresponding rebate benefits and points by referring apps.</li>
                                 <li>Participated in the development of a questionnaire to give away coupons during the Double 11 and Double 12 shopping festivals.</li>

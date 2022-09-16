@@ -62,7 +62,7 @@
          "id": 4,
          "name": "React Budget Planner",
          "url": "https://github.com/JackWorld99/React-Budget-Planner",
-         "description": "Build with React, it's an application that helps you to know exactly where your money is being spent.",
+         "description": "Build with React, it's an application that allows you to monitor and categorize different budgets or expenses, helps you know exactly where your money is being spent.",
          "img": "React Budget Planner.png",
          "category": "React"
       },
@@ -78,7 +78,7 @@
          "id": 6,
          "name": "MERN Expense Tracker",
          "url": "https://github.com/JackWorld99/MERN-Expense-Tracker",
-         "description": "Expense Tracker Appbuild with MERN Sack We Dvelopment Famework. It allows you to monitor and categorize different expenses or income.",
+         "description": "Build with MERN Sack We Dvelopment Famework. It allows you to monitor and categorize different expenses or income.",
          "img": "MERN Expense Tracker.png",
          "category": "React"
       },
@@ -86,7 +86,7 @@
          "id": 7,
          "name": "Vue Weight Tracker",
          "url": "https://github.com/JackWorld99/Vue-Weight-Tracker",
-         "description": "This is a weight tracker build with Vue js ,composition API and Vite. This weight tracker will assist you in weight control and helps you to lose weight or reach your weight goal. ",
+         "description": "This is a weight tracker build with Vue js ,composition API and Vite. It will assist you in weight control and helps you to lose weight or reach your weight goal. ",
          "img": "Vue Weight Tracker.png",
          "category": "Vue"
       },
@@ -118,7 +118,7 @@
          "id": 11,
          "name": "Laravel CRUD Role Permission",
          "url": "https://github.com/JackWorld99/Laravel-CRUD-Role-Permission",
-         "description": "Build a task management application with roles and CRUD capabilities using the Laravel framework.",
+         "description": "An application with role permissions and CRUD task management developed using the Laravel framework.",
          "img": "Laravel CRUD Role Permission.png",
          "category": "Laravel"
       },
