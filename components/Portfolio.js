@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import { IoChevronDown, IoEyeOutline } from "react-icons/io5"
+import { IoChevronDown, IoEyeOutline, IoCloseOutline, IoLogoGithub } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
 import useSWR from 'swr'
 
@@ -9,6 +9,11 @@ const Portfolio = () => {
     const [selectValue, setSelectValue] = useState("Select category")
     const [triggerColor, setTriggerkColor] = useState("All")
     const [showAll, setShowAll] = useState(true)
+    const [toggleModal, setToggleModal] = useState(false)
+    const [overlayModal, setOverlayModal] = useState(false)
+    const [description, setDescription]  = useState()
+    const [name, setName]  = useState()
+    const [url, setUrl]  = useState()
     const {data} = useSWR('/api/staticdata')
     const parseData = JSON.parse(data)
 
@@ -18,6 +23,18 @@ const Portfolio = () => {
         setShowAll(false)
         setTriggerkColor(selectedCategory)
         setSelectValue(selectedCategory)
+    }
+
+    const handleProjectClick = (name) => {
+        setName(name)
+        setUrl(parseData.repo.filter(r=> r.name == name).map(p=>p.url))
+        setDescription(parseData.repo.filter(r=> r.name == name).map(p=>p.description))
+        modal()
+    }
+
+    const modal = () => {
+        setToggleModal(!toggleModal)
+        setOverlayModal(!overlayModal)
     }
 
     return (
@@ -50,15 +67,15 @@ const Portfolio = () => {
                     </ul>
                 </div>
 
-                <ul className="project-list">
+                <ul className="project-list" >
                     {parseData.repo.map(project => (
-                        <li className={`project-item ${(showAll || selectValue === "All" || selectValue === project.category) ? "active" : "" }`} key={project.id}>
-                            <a href={project.url}>
+                        <li className={`project-item ${(showAll || selectValue === "All" || selectValue === project.category) ? "active" : "" }`} key={project.id} onClick={()=>handleProjectClick(project.name)}>
+                            <a>
                                 <figure className="project-img">
                                     <div className="project-item-icon-box">
                                         <IoEyeOutline className="ion-icon"/>
                                     </div>
-                                    <img src={`/images/${project.img}`} alt={project.name.toLocaleLowerCase()} loading="lazy" />
+                                    <img src={`/images/${project.img}`} alt={project.name} loading="lazy" />
                                 </figure>
                                 <h3 className="project-title">{project.name}</h3>
                                 <p className="project-category">{project.category}</p>
@@ -67,6 +84,24 @@ const Portfolio = () => {
                     ))}
                 </ul>
             </section>
+            <div className={`modal-container ${toggleModal ? "active" : ""}`} >
+                <div className={`overlay ${overlayModal ? "active" : ""}`} onClick={modal}></div>
+                <section className="testimonials-modal">
+                    <button className="modal-close-btn" onClick={modal}>
+                        <IoCloseOutline className="ion-icon"/>
+                    </button>
+                    <div className="modal-content">
+                        <h4 className="h3 modal-title">{name}</h4>
+                        <p style={{marginTop:"10px"}}><b>Description</b></p>
+                        <p>{description}</p>
+                         <a href={url} >
+                            <button type="button" width="300px" className="success-btn" style={{marginTop:"15px"}}>
+                                <IoLogoGithub/>Github
+                            </button>
+                        </a>
+                    </div>
+                </section>
+            </div>
         </article>
     )
 }
