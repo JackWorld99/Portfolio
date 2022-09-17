@@ -38,8 +38,8 @@ const Resume = () => {
                             <li>Planned, designed, analyzed, developed, tested, deployed, and maintained web applications.</li>
                         </ul>
                         <span className="skill-learn">Tasks</span>
-                        <details style={{color: "white", cursor: "pointer"}}>
-                            <summary>Show more...</summary>
+                        <details style={{color: "white"}}>
+                            <summary style={{cursor: "pointer"}}>Show more...</summary>
                             <ul className="intern-learn"> 
                                 <li>Being assigned to the Ecommerce team and using algorithms to group packages that match the products purchased by the user into appropriate containers, such as sea and air freight. Increase sales by making it easier for customer service staff to instantly check the status of packages.</li>
                                 <li>Communicate with customer service staff to understand their problems when using the backend application, solve technical issues, provide technical support, optimize the operating interface and customize new features.</li>
@@ -94,10 +94,10 @@ const Resume = () => {
                     </ul>
                 </section>
             ))}
-            <section className="skill" style={{marginBottom: "30px", cursor: "pointer"}}>
+            <section className="skill" style={{marginBottom: "30px"}}>
                 <h3 className="h3 skills-title">Courses Completed</h3>
                 <details style={{color: "white"}}>
-                    <summary>Show more...</summary>
+                    <summary style={{cursor: "pointer"}}>Show more...</summary>
                         <ul className="intern-learn">
                             {parseData.courses.map(c => (
                                 <li key={c.id}>

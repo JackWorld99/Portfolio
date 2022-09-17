@@ -38,7 +38,7 @@
          "id": 1,
          "name": "Ecommerce Sanity Stripe",
          "url": "https://github.com/JackWorld99/Ecommerce-Sanity-Stripe",
-         "description": "This is an E-commerce application built with Nextjs, Sanity.io, and Stripe. A fully responsive Modern Full Stack Ecommerce application with cart and payments functionality. ",
+         "description": "This is an Ecommerce application built with Nextjs, Sanity.io, and Stripe. A fully responsive Modern Full Stack Ecommerce application with cart and payments functionality. ",
          "img": "Ecommerce Sanity Stripe.png",
          "category": "React"
       },
@@ -46,7 +46,7 @@
          "id": 2,
          "name": "Portfolio",
          "url": "https://github.com/JackWorld99/Portfolio",
-         "description": "A personal portfolio website that provides information about me, a compilation of relevant work samples and documents gathered during school years and presented in a structured manner, and how to contact me.",
+         "description": "A fully responsive personal portfolio website, responsive for all devices, built using React and Nextjs. It provides information about me, a compilation of relevant work samples and documents gathered during school years and presented in a structured manner, and how to contact me.",
          "img": "portfolio.png",
          "category": "React"
       },
