@@ -5,7 +5,7 @@
 
 ### 🔎 What is this site for❓
 
-A personal portfolio website that provides information about me, a compilation of relevant work samples and documents gathered during school years and presented in a structured manner, and how to contact me.
+A fully responsive personal portfolio website, responsive for all devices, built using React and Nextjs. It provides information about me, a compilation of relevant work samples and documents gathered during school years and presented in a structured manner, and how to contact me.
 
 ---
 
