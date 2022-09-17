@@ -27,8 +27,12 @@ const Portfolio = () => {
 
     const handleProjectClick = (name) => {
         setName(name)
-        setUrl(parseData.repo.filter(r=> r.name == name).map(p=>p.url))
-        setDescription(parseData.repo.filter(r=> r.name == name).map(p=>p.description))
+        parseData.repo.forEach(p => {
+            if(p.name == name){
+                setUrl(p.url)
+                setDescription(p.description)
+            }
+        })
         modal()
     }
 
