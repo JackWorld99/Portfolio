@@ -30,6 +30,10 @@
       },
       {
          "id": 8,
+         "name": "Java"
+      },
+      {
+         "id": 9,
          "name": "Others"
       }
    ],
@@ -116,6 +120,14 @@
       },
       {
          "id": 11,
+         "name": "CRUD RESTAPI DATABASE",
+         "url": "https://github.com/JackWorld99/CRUD-RESTAPI-DATABASE",
+         "description": "A simple CRUD RESTAPI using Nodejs, Express, MySQL, and MongoDB. The application will connect to MySQL/MongoDB database and allow users to create, read, update, and delete blog posts.",
+         "img": "CRUD RESTAPI DATABASE.png",
+         "category": "NodeJS"
+      },
+      {
+         "id": 12,
          "name": "Laravel CRUD Role Permission",
          "url": "https://github.com/JackWorld99/Laravel-CRUD-Role-Permission",
          "description": "An application with role permissions and CRUD task management developed using the Laravel framework.",
@@ -123,7 +135,7 @@
          "category": "Laravel"
       },
       {
-         "id": 12,
+         "id": 13,
          "name": "Python Web Scraping Jobs",
          "url": "https://github.com/JackWorld99/Python-Web-Scraping-Jobs",
          "description": "Scrape jobs on recruitment website that match expected salaries, with pagination, extract job titles, salary, link, company and summaries from the site and save as a csv file for excel.",
@@ -131,7 +143,7 @@
          "category": "Python"
       },
       {
-         "id": 13,
+         "id": 14,
          "name": "Python Flask CRUD CSV",
          "url": "https://github.com/JackWorld99/Python-Flask-CRUD-CSV",
          "description": "Python Flask Application with CRUD, import and export CSV file.",
@@ -139,7 +151,7 @@
          "category": "Python"
       },
       {
-         "id": 14,
+         "id": 15,
          "name": "Python Tools",
          "url": "https://github.com/JackWorld99/Python-Tools",
          "description": "Python Gadget",
@@ -147,7 +159,15 @@
          "category": "Python"
       },
       {
-         "id": 15,
+         "id": 16,
+         "name": "Java Exercises",
+         "url": "https://github.com/JackWorld99/Java-Exercises.git",
+         "description": "Java Exercises",
+         "img": "Java Exercises.png",
+         "category": "Java"
+      },
+      {
+         "id": 17,
          "name": "To Do List",
          "url": "https://github.com/JackWorld99/To-Do-List",
          "description": "A tool act as a memory aid. Build a To Do List web app in HTML, CSS and JavaScript.",
@@ -155,7 +175,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 16,
+         "id": 18,
          "name": "Text To Speech Converter",
          "url": "https://github.com/JackWorld99/Text-To-Speech-Converter",
          "description": "A technology that converts text to voice. It could be used to create a voiceover for a video or to help people with visual problems to “read” texts.",
@@ -163,7 +183,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 17,
+         "id": 19,
          "name": "Currency Converter",
          "url": "https://github.com/JackWorld99/Currency-Converter",
          "description": "A Currency Converter with HTML CSS and JavaScript. Swap or reverse the two currencies easily by clicking on the exchange icon.",
@@ -171,7 +191,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 18,
+         "id": 20,
          "name": "QR Code Generator",
          "url": "https://github.com/JackWorld99/QR-Code-Generator",
          "description": "Create a QR Code Generator with HTML CSS and JavaScript.",
@@ -179,7 +199,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 19,
+         "id": 21,
          "name": "File Downloader",
          "url": "https://github.com/JackWorld99/File-Downloader",
          "description": " Build a file downloader with JavaScript able download image or video.",
@@ -187,7 +207,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 20,
+         "id": 22,
          "name": "Canvas Clock",
          "url": "https://github.com/JackWorld99/Canvas-Clock",
          "description": "Build an analog clock using HTML Canvas.",
@@ -195,7 +215,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 21,
+         "id": 23,
          "name": "PWA Offline Travel Navigation App",
          "url": "https://github.com/JackWorld99/PWA-Offline-Travel-Navigation-App",
          "description": "This app aims to provide a platform for travelers who are willing to travel to the 'Taman Sutera Utama' area",
@@ -203,7 +223,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 22,
+         "id": 24,
          "name": "Snake Game",
          "url": "https://github.com/JackWorld99/Snake-Game",
          "description": "Build a simple snake game In JavaScript",
@@ -211,7 +231,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 23,
+         "id": 25,
          "name": "Realtime Crypto",
          "url": "https://github.com/JackWorld99/Realtime-Crypto",
          "description": "Using javascript to get cryptocurrencies, real-time prices, volumes, trading pairs, crypto categories and crypto derivatives, and rank them in order.",
@@ -219,7 +239,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 24,
+         "id": 26,
          "name": "Laravel Project Listing",
          "url": "https://github.com/JackWorld99/Laravel-Project-Listing",
          "description": "Laravel Project Listing",
@@ -227,7 +247,7 @@
          "category": "Laravel"
       },
       {
-         "id": 25,
+         "id": 27,
          "name": "JackWorld99",
          "url": "https://github.com/JackWorld99/JackWorld99",
          "description": "Hey I'm Jack, this is something about me.",
@@ -235,7 +255,7 @@
          "category": "Others"
       },
       {
-         "id": 26,
+         "id": 28,
          "name": "Image Lazy Loading",
          "url": "https://github.com/JackWorld99/Image-Lazy-Loading",
          "description": "Lazy loading can occur on different moments in the application, but it typically happens on some user interactions such as scrolling and navigation.",
@@ -243,7 +263,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 27,
+         "id": 29,
          "name": "Pattern program",
          "url": "https://github.com/JackWorld99/Pattern-program",
          "description": "Patterns consisting of numbers, alphabets or symbols in a particular form. ",
