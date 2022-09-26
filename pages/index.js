@@ -1,4 +1,3 @@
-import { server } from '../config'
 import { Sidebar, Navbar, About, Resume, Portfolio, Blog, Contact } from '../components'
 import { SWRConfig } from 'swr'
 import path from 'path'

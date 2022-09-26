@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useRef, useState} from "react"
 import { server } from '../config'
 import { IoPaperPlane } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
@@ -10,6 +10,9 @@ const disposable = require('disposable-email')
 const Contact = () => {
     const {page} = useStateContext()
     const [message, setMessage] = useState("")
+    const nameInput = useRef()
+    const emailInput = useRef()
+    const messageInput = useRef()
     
     const sendEmail = (e) => {
         const name = e.target.Name.value
@@ -25,23 +28,36 @@ const Contact = () => {
         const waitingToast = {position: "bottom-right", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: false, draggable: false, progress: undefined, theme: "dark"}
         const inputError = (errorMessage) => toast.error(errorMessage, toastSetup)
 
+        nameInput.current.style.borderColor = null
+        emailInput.current.style.borderColor = null
+        messageInput.current.style.borderColor = null
+        const borderColors = "var(--bittersweet-shimmer)"
+
         if(validateName){
             e.preventDefault()
+            nameInput.current.focus()
+            nameInput.current.style.borderColor = borderColors
             return inputError("Name is required")
-        }
-
-        if(validateMessage){
-            e.preventDefault()
-            return inputError("Message is required")
         }
 
         if(isEmailEmpty){
             e.preventDefault()
+            emailInput.current.focus()
+            emailInput.current.style.borderColor = borderColors
             return inputError("Email is required")
         }
 
+        if(validateMessage){
+            e.preventDefault()
+            messageInput.current.focus()
+            messageInput.current.style.borderColor = borderColors
+            return inputError("Message is required")
+        }
+        
         if(!validateEmail){
             e.preventDefault()
+            emailInput.current.focus()
+            emailInput.current.style.borderColor = borderColors
             return inputError("Please enter a valid email !")
         }
 
@@ -50,6 +66,8 @@ const Contact = () => {
 
         if(!disposableEmail) {
             e.preventDefault()
+            emailInput.current.focus()
+            emailInput.current.style.borderColor = borderColors
             return inputError("Please don't use disposable email !")
         }
 
@@ -79,10 +97,10 @@ const Contact = () => {
                 {message && <p style={{color: "var(--vegas-gold)", marginBottom: "15px"}}><b>{message}</b></p>}
                 <form className="form" action={process.env.NEXT_PUBLIC_EMAIL} method="POST" onSubmit={sendEmail} >
                     <div className="input-wrapper">
-                        <input type="text" name="Name" className="form-input" placeholder="Name" />
-                        <input type="text" name="Email" className="form-input" placeholder="Email Address"/>
+                        <input type="text" name="Name" className="form-input" placeholder="Name" ref={nameInput}/>
+                        <input type="text" name="Email" className="form-input" placeholder="Email Address" ref={emailInput}/>
                     </div>
-                    <textarea name="Message" className="form-input" placeholder="Your Message"></textarea>
+                    <textarea name="Message" className="form-input" placeholder="Your Message" ref={messageInput}></textarea>
                     <input type="text" name="_honey" style={{display:"none"}} />
                     <input type="hidden" name="_template" value="table" />
                     <input type="hidden" name="_next" value={`${server}/success`}></input>
