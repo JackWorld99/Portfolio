@@ -98,7 +98,7 @@
          "id": 8,
          "name": "React Cryptocurrency Price Tracker",
          "url": "https://github.com/JackWorld99/React-Cryptocurrency-Price-Tracker",
-         "description": "A simple Cryptocurrency price tracker app using React, Next js and use a Crypto Api to get the data.",
+         "description": "A real-time Cryptocurrency price tracker app getting data via the Socket and coingecko api, using React and Nextjs.",
          "img": "React Cryptocurrency Price Tracker.png",
          "category": "React"
       },
