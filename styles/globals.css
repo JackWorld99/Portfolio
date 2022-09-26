@@ -1330,6 +1330,11 @@ textarea.form-input::-webkit-resizer {
   .success .description {
     font-size: var(--fs-7);
   }
+
+  .service-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 @media (min-width: 450px) {
