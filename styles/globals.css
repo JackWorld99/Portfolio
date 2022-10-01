@@ -1335,6 +1335,10 @@ textarea.form-input::-webkit-resizer {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
+  .clients-item {
+    min-width: calc(20% - 10px);
+  }
 }
 
 @media (min-width: 450px) {
