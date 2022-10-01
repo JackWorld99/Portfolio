@@ -89,7 +89,7 @@ const Contact = () => {
 
             <section className="mapbox">
                 <figure>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127631.07988903335!2d103.69005504598817!3d1.4889118503384597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da12c6d36b3a27%3A0xd5f4b21db593d4f5!2sJohor%20Bahru%2C%20Johor!5e0!3m2!1sen!2smy!4v1661781629979!5m2!1sen!2smy" width="400" height="300" loading="lazy"></iframe>
+                    <iframe src={process.env.NEXT_PUBLIC_LOCATION} width="400" height="300" loading="lazy"></iframe>
                 </figure>
             </section>
             <section className="contact-form">

@@ -6,39 +6,29 @@ import useSWR from 'swr'
 const Portfolio = () => {
     const {page} = useStateContext()
     const [click, setClick] = useState(false)
-    const [selectValue, setSelectValue] = useState("Select category")
-    const [triggerColor, setTriggerkColor] = useState("All")
-    const [showAll, setShowAll] = useState(true)
-    const [toggleModal, setToggleModal] = useState(false)
-    const [overlayModal, setOverlayModal] = useState(false)
-    const [description, setDescription]  = useState()
-    const [name, setName]  = useState()
-    const [url, setUrl]  = useState()
+    const [selectValue, setSelectValue] = useState("All")
+    const [controlModal, setControlModall] = useState({toggleModal: false, overlayModal: false})
+    const [modelDes, setModelDes]  = useState([])
     const {data} = useSWR('/api/staticdata')
     const parseData = JSON.parse(data)
 
     const handleClick = (e) => {
         const selectedCategory = e.target.innerText
         setClick(false)
-        setShowAll(false)
-        setTriggerkColor(selectedCategory)
         setSelectValue(selectedCategory)
     }
 
     const handleProjectClick = (name) => {
-        setName(name)
         parseData.repo.forEach(p => {
             if(p.name == name){
-                setUrl(p.url)
-                setDescription(p.description)
+                setModelDes((prev) => ({...prev, pName: name, description: p.description, url: p.url}))
             }
         })
         modal()
     }
 
     const modal = () => {
-        setToggleModal(!toggleModal)
-        setOverlayModal(!overlayModal)
+        setControlModall(prev => ({...prev, toggleModal: !controlModal.toggleModal, overlayModal: !controlModal.overlayModal}))
     }
 
     return (
@@ -50,11 +40,10 @@ const Portfolio = () => {
                 <ul className="filter-list">
                     {parseData.projectCategory.map(pc => (
                         <li className="filter-item" key={pc.id}>
-                            <button className={triggerColor === pc.name ? "active" : ""} onClick={handleClick}>{pc.name}</button>
+                            <button className={selectValue === pc.name ? "active" : ""} onClick={handleClick}>{pc.name}</button>
                         </li>
                     ))}
                 </ul>
-
                 <div className="filter-select-box">
                     <button className={`filter-select ${click ? "active" : ""}`} onClick={() => setClick(!click)}>
                         <div className="select-value">{selectValue}</div>
@@ -70,10 +59,9 @@ const Portfolio = () => {
                         ))}
                     </ul>
                 </div>
-
-                <ul className="project-list" >
+                <ul className="project-list">
                     {parseData.repo.map(project => (
-                        <li className={`project-item ${(showAll || selectValue === "All" || selectValue === project.category) ? "active" : "" }`} key={project.id} onClick={()=>handleProjectClick(project.name)}>
+                        <li className={`project-item ${(selectValue === "All" || selectValue === project.category) ? "active" : "" }`} key={project.id} onClick={()=>handleProjectClick(project.name)}>
                             <a>
                                 <figure className="project-img">
                                     <div className="project-item-icon-box">
@@ -88,17 +76,17 @@ const Portfolio = () => {
                     ))}
                 </ul>
             </section>
-            <div className={`modal-container ${toggleModal ? "active" : ""}`} >
-                <div className={`overlay ${overlayModal ? "active" : ""}`} onClick={modal}></div>
+            <div className={`modal-container ${controlModal.toggleModal ? "active" : ""}`} >
+                <div className={`overlay ${controlModal.overlayModal ? "active" : ""}`} onClick={modal}></div>
                 <section className="testimonials-modal">
                     <button className="modal-close-btn" onClick={modal}>
                         <IoCloseOutline className="ion-icon"/>
                     </button>
                     <div className="modal-content">
-                        <h4 className="h3 modal-title">{name}</h4>
+                        <h4 className="h3 modal-title">{modelDes.pName}</h4>
                         <p style={{marginTop:"10px"}}><b>Description</b></p>
-                        <p>{description}</p>
-                         <a href={url} >
+                        <p>{modelDes.description}</p>
+                         <a href={modelDes.url} >
                             <button type="button" width="300px" className="success-btn" style={{marginTop:"15px"}}>
                                 <IoLogoGithub/>Github
                             </button>
