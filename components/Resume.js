@@ -1,6 +1,7 @@
 import React from "react"
 import { IoBookOutline } from "react-icons/io5"
 import { useStateContext } from "../context/StateContext"
+import Carousel from './Carousel'
 import useSWR from 'swr'
 
 const Resume = () => {
@@ -82,7 +83,8 @@ const Resume = () => {
                     ))}
                 </ul>
             </section>
-            {parseData.skillIcon.map(s => (
+
+            {/* {parseData.skillIcon.map(s => (
                 <section className="clients" key={s.id}>
                     <h3 className="h3 clients-title">{s.name}</h3>
                     <ul className="clients-list has-scrollbar">
@@ -93,7 +95,17 @@ const Resume = () => {
                         ))}
                     </ul>
                 </section>
+            ))} */}
+
+            {parseData.skillIcon.map(s => (
+                <section className="clients" key={s.id}>
+                    <h3 className="h3 clients-title">{s.name}</h3>
+                    <div style={{marginTop:"12px"}}>
+                        <Carousel image={s.data} />
+                    </div>
+                </section>
             ))}
+             
             <section className="skill" style={{marginBottom: "30px"}}>
                 <h3 className="h3 skills-title">Courses Completed</h3>
                 <details style={{color: "white"}}>
