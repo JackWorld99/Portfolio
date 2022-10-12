@@ -19,16 +19,12 @@ const Portfolio = () => {
     }
 
     const handleProjectClick = (name) => {
-        parseData.repo.forEach(p => {
-            if(p.name == name){
-                setModelDes((prev) => ({...prev, pName: name, description: p.description, url: p.url}))
-            }
-        })
+        parseData.repo.filter(i => i.name == name).map(j => setModelDes({pName: name, description: j.description, url: j.url}))
         modal()
     }
 
     const modal = () => {
-        setControlModall(prev => ({...prev, toggleModal: !controlModal.toggleModal, overlayModal: !controlModal.overlayModal}))
+        setControlModall({toggleModal: !controlModal.toggleModal, overlayModal: !controlModal.overlayModal})
     }
 
     return (
