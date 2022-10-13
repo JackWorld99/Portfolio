@@ -1,6 +1,8 @@
 import React from "react"
 import { useStateContext } from "../context/StateContext"
-import ContactForm from './ContactForm'
+import { GoogleReCaptchaProvider} from 'react-google-recaptcha-v3'
+// import ContactForm from './ContactForm'
+import Form from './Form'
 
 const Contact = () => {
     const {page} = useStateContext()
@@ -17,7 +19,10 @@ const Contact = () => {
             </section>
             <section className="contact-form">
                 <h3 className="h3 form-title">Contact Me</h3>
-                <ContactForm />
+                <GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_SITE_KEY}  scriptProps={{ async: false, defer: false, appendTo: "head", nonce: undefined, }}>
+                    <Form />
+                </GoogleReCaptchaProvider>
+                {/* <ContactForm /> */}
             </section>
         </article>
     )
