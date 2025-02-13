@@ -24,30 +24,28 @@ const Resume = () => {
                     <li className="timeline-item">
                         <h4 className="h4 timeline-item-title"> Internship - Web Developer</h4>
                         <span>Oct 2020&ensp;-&ensp;Jan 2021</span>
-                        <p className="timeline-text">
-                            During my industrial training/internship, I worked as a <b>Web Developer</b> in a shipping/logistics company call <b>Wepost Ecommerce</b>. Job scope conducts <b>Frontend Web Design</b> and <b>Backend Web Development</b>. 
-                        </p>
+                        <p className="timeline-text">During my internship, I worked as a <b>Web Developer</b> at <b>Wepost Ecommerce</b>, a shipping and logistics company. My role involved both <b>Frontend Web Design</b> and <b>Backend Web Development</b>.</p>
                         <ul className="intern-learn">
-                            <li>Developed and designed user interfaces with PHP framework, HTML5, Javascript, and CSS3 which increase target audience engagement.</li>
-                            <li>Create models within an MVC application that implements the business logic necessary to satisfy business requirements.</li>
-                            <li>Create accessible, responsive, and functional user interfaces to allow users on any device to have the same perfect user experience.</li>
-                            <li>Helped to achieve a consistent look and visual theme across the website by promoting uniform fonts, formatting, images, and layout.</li>
-                            <li>Implementing advanced search, paging, and export functionality for each screen.</li>
-                            <li>Using jQuery JSON for the dynamic user interface, retrieval, and posting of data.</li>
-                            <li>Built API following Restful standards to allow users to submit information by storing it in MySQL databases.</li>
-                            <li>Planned, designed, analyzed, developed, tested, deployed, and maintained web applications.</li>
+                            <li>Developed and designed user interfaces using PHP frameworks, HTML5, JavaScript, and CSS3, resulting in increased target audience engagement.</li>  
+                            <li>Created models within an MVC application to implement the necessary business logic and meet specific business requirements.</li>  
+                            <li>Developed accessible, responsive, and functional user interfaces to ensure a seamless experience across all devices.</li>  
+                            <li>Achieved a consistent visual theme across the website by standardizing fonts, formatting, images, and layouts.</li>  
+                            <li>Implemented advanced search, paging, and export functionalities on each screen.</li>  
+                            <li>Utilized jQuery and JSON to build dynamic user interfaces that efficiently retrieve and post data.</li>  
+                            <li>Built RESTful APIs that enable users to submit information and store data in MySQL databases.</li>  
+                            <li>Planned, designed, analyzed, developed, tested, deployed, and maintained robust web applications.</li>
                         </ul>
                         <span className="skill-learn">Tasks</span>
                         <details style={{color: "white"}}>
                             <summary style={{cursor: "pointer"}}>Show more...</summary>
                             <ul className="intern-learn"> 
-                                <li>Being assigned to the Ecommerce team and using algorithms to group packages that match the products purchased by the user into appropriate containers, such as sea and air freight. Increase sales by making it easier for customer service staff to instantly check the status of packages.</li>
-                                <li>Communicate with customer service staff to understand their problems when using the backend application, solve technical issues, provide technical support, optimize the operating interface and customize new features.</li>
-                                <li>Participate in the development of a referral program page where users can earn corresponding rebate benefits and points by referring apps.</li>
-                                <li>Participated in the development of a questionnaire to give away coupons during the Double 11 and Double 12 shopping festivals.</li>
-                                <li>Collaborate with colleagues to create new MySQL databases to improve overall efficiency and facilitate future maintenance.</li>
-                                <li>Develop reports and charts for the settlement of cash rebates, with the option for the finance department administrator to export CSV on a yearly, monthly or daily basis as required.</li>
-                                <li>Actively participate in weekly team meetings and report on the progress of the project assigned by the manager.</li>
+                                <li><b>Ecommerce Team Assignment:</b> Assigned to the Ecommerce team and leveraged algorithms to group packages containing purchased products into appropriate shipping containers (e.g., sea or air freight), thereby streamlining package tracking for customer service and boosting sales.</li>
+                                <li><b>Backend Application Support:</b> Collaborated with customer service to identify challenges with the backend application; resolved technical issues, provided ongoing support, optimized the user interface, and customized new features to enhance functionality.</li>
+                                <li><b>Referral Program Development:</b> Contributed to the development of a referral program page, enabling users to earn rebate benefits and points by referring the app.</li>
+                                <li><b>Promotional Campaign Support:</b> Participated in the design and implementation of a questionnaire for distributing coupons during the Double 11 and Double 12 shopping festivals.</li>
+                                <li><b>Database Optimization:</b> Collaborated with colleagues to design and implement new MySQL databases, improving overall system efficiency and simplifying future maintenance.</li>
+                                <li><b>Financial Reporting Tools:</b> Developed detailed reports and charts for cash rebate settlements, incorporating functionality for finance administrators to export CSV files on a daily, monthly, or yearly basis as needed.</li>
+                                <li><b>Team Collaboration:</b> Actively participated in weekly team meetings, providing regular project updates as assigned by the manager.</li>
                             </ul>
                         </details>
                         <span className="skill-learn">Learned Skills<p className="timeline-text" style={{display: "inline"}}><b>&ensp;·&ensp;Laravel&ensp;·&ensp;HTML&ensp;·&ensp;JavaScript&ensp;·&ensp;CSS&ensp;·&ensp;jQuery&ensp;·&ensp;MySQL&ensp;·&ensp;Bootstrap&ensp;·&ensp;Git</b></p></span>
