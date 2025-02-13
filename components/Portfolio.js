@@ -13,9 +13,8 @@ const Portfolio = () => {
     const parseData = JSON.parse(data)
 
     const handleClick = (e) => {
-        const selectedCategory = e.target.innerText
         setClick(false)
-        setSelectValue(selectedCategory)
+        setSelectValue(e.target.innerText)
     }
 
     const handleProjectClick = (name) => {

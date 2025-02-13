@@ -6,8 +6,9 @@ const Navbar = () => {
     const { setPage } = useStateContext()
 
     const handleClick = (e) => {
-        setLink(e.target.innerHTML.toLowerCase())
-        setPage(e.target.innerHTML.toLowerCase())
+        const lowerCase = e.target.innerText.toLowerCase()
+        setLink(lowerCase)
+        setPage(lowerCase)
     }
 
     return (

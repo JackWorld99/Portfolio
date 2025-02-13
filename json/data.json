@@ -14,32 +14,44 @@
       },
       {
          "id": 4,
-         "name": "Vanilla HTML"
+         "name": "MERN"
       },
       {
          "id": 5,
-         "name": "Python"
+         "name": "Vanilla HTML"
       },
       {
          "id": 6,
-         "name": "Vue"
+         "name": "Python"
       },
       {
          "id": 7,
-         "name": "Laravel"
+         "name": "Vue"
       },
       {
          "id": 8,
-         "name": "Java"
+         "name": "Laravel"
       },
       {
          "id": 9,
+         "name": "Java"
+      },
+      {
+         "id": 10,
          "name": "Others"
       }
    ],
    "repo": [
       {
          "id": 1,
+         "name": "User Management System",
+         "url": "https://github.com/JackWorld99/MERN-User-Management-System",
+         "description": "A cutting-edge user management system featuring robust functionality, advanced security measures, and an intuitive interface, meticulously designed to optimize enterprise management efficiency.",
+         "img": "User Management System.png",
+         "category": "MERN"
+      },
+      {
+         "id": 2,
          "name": "Ecommerce Sanity Stripe",
          "url": "https://github.com/JackWorld99/Ecommerce-Sanity-Stripe",
          "description": "This is an Ecommerce application built with Nextjs, Sanity.io, and Stripe. A fully responsive Modern Full Stack Ecommerce application with cart and payments functionality. ",
@@ -47,7 +59,7 @@
          "category": "React"
       },
       {
-         "id": 2,
+         "id": 3,
          "name": "Portfolio",
          "url": "https://github.com/JackWorld99/Portfolio",
          "description": "A fully responsive personal portfolio website, responsive for all devices, built using React and Nextjs. It provides information about me, a compilation of relevant work samples and documents gathered during school years and presented in a structured manner, and how to contact me.",
@@ -55,7 +67,7 @@
          "category": "React"
       },
       {
-         "id": 3,
+         "id": 4,
          "name": "React Travel Advisor",
          "url": "https://github.com/JackWorld99/React-Travel-Advisor",
          "description": "A Travel Companion Application with Geolocation, Google Maps API, Searching for places, Fetching restaurants, hotels and attractions based on location from specialized Rapid APIs and data filtering.",
@@ -63,7 +75,7 @@
          "category": "React"
       },
       {
-         "id": 4,
+         "id": 5,
          "name": "React Budget Planner",
          "url": "https://github.com/JackWorld99/React-Budget-Planner",
          "description": "Build with React, it's an application that allows you to monitor and categorize different budgets or expenses, helps you know exactly where your money is being spent.",
@@ -71,7 +83,7 @@
          "category": "React"
       },
       {
-         "id": 5,
+         "id": 6,
          "name": "Puppeteer Book Library",
          "url": "https://github.com/JackWorld99/Puppeteer-Book-Library",
          "description": "Using a web automation tool -- 'Puppeteer' to find a book from an online book library.",
@@ -79,15 +91,15 @@
          "category": "NodeJS"
       },
       {
-         "id": 6,
-         "name": "MERN Expense Tracker",
+         "id": 7,
+         "name": "Expense Tracker",
          "url": "https://github.com/JackWorld99/MERN-Expense-Tracker",
          "description": "Build with MERN Sack We Dvelopment Famework. It allows you to monitor and categorize different expenses or income.",
          "img": "MERN Expense Tracker.png",
-         "category": "React"
+         "category": "MERN"
       },
       {
-         "id": 7,
+         "id": 8,
          "name": "Vue Weight Tracker",
          "url": "https://github.com/JackWorld99/Vue-Weight-Tracker",
          "description": "This is a weight tracker build with Vue js ,composition API and Vite. It will assist you in weight control and helps you to lose weight or reach your weight goal. ",
@@ -95,7 +107,7 @@
          "category": "Vue"
       },
       {
-         "id": 8,
+         "id": 9,
          "name": "React Cryptocurrency Price Tracker",
          "url": "https://github.com/JackWorld99/React-Cryptocurrency-Price-Tracker",
          "description": "A real-time Cryptocurrency price tracker app getting data via the Socket and coingecko api, using React and Nextjs.",
@@ -103,7 +115,7 @@
          "category": "React"
       },
       {
-         "id": 9,
+         "id": 10,
          "name": "File Sharing With Password",
          "url": "https://github.com/JackWorld99/File-Sharing-With-Password",
          "description": "A File Sharing tools build with Node Node Js, Express and MongoDB. It's includes file sharing, password protected files and a download count tracker.The file can only open with the password you set.",
@@ -111,7 +123,7 @@
          "category": "NodeJS"
       },
       {
-         "id": 10,
+         "id": 111,
          "name": "URL Shortener",
          "url": "https://github.com/JackWorld99/URL-Shortener",
          "description": "Build a URL Shortener Service with Node.js/Express/MongoDB. a Uniform Resource Locator made substantially shorter and still direct to the required page.",
@@ -119,7 +131,7 @@
          "category": "NodeJS"
       },
       {
-         "id": 11,
+         "id": 12,
          "name": "CRUD RESTAPI DATABASE",
          "url": "https://github.com/JackWorld99/CRUD-RESTAPI-DATABASE",
          "description": "A simple CRUD RESTAPI using Nodejs, Express, MySQL, and MongoDB. The application will connect to MySQL/MongoDB database and allow users to create, read, update, and delete blog posts.",
@@ -127,7 +139,7 @@
          "category": "NodeJS"
       },
       {
-         "id": 12,
+         "id": 13,
          "name": "Laravel CRUD Role Permission",
          "url": "https://github.com/JackWorld99/Laravel-CRUD-Role-Permission",
          "description": "An application with role permissions and CRUD task management developed using the Laravel framework.",
@@ -135,7 +147,7 @@
          "category": "Laravel"
       },
       {
-         "id": 13,
+         "id": 14,
          "name": "Python Web Scraping Jobs",
          "url": "https://github.com/JackWorld99/Python-Web-Scraping-Jobs",
          "description": "Scrape jobs on recruitment website that match expected salaries, with pagination, extract job titles, salary, link, company and summaries from the site and save as a csv file for excel.",
@@ -143,7 +155,7 @@
          "category": "Python"
       },
       {
-         "id": 14,
+         "id": 15,
          "name": "Python Flask CRUD CSV",
          "url": "https://github.com/JackWorld99/Python-Flask-CRUD-CSV",
          "description": "Python Flask Application with CRUD, import and export CSV file.",
@@ -151,7 +163,7 @@
          "category": "Python"
       },
       {
-         "id": 15,
+         "id": 16,
          "name": "Python Tools",
          "url": "https://github.com/JackWorld99/Python-Tools",
          "description": "Python Gadget",
@@ -159,7 +171,7 @@
          "category": "Python"
       },
       {
-         "id": 16,
+         "id": 17,
          "name": "Java Exercises",
          "url": "https://github.com/JackWorld99/Java-Exercises.git",
          "description": "Java Exercises",
@@ -167,7 +179,7 @@
          "category": "Java"
       },
       {
-         "id": 17,
+         "id": 18,
          "name": "To Do List",
          "url": "https://github.com/JackWorld99/To-Do-List",
          "description": "A tool act as a memory aid. Build a To Do List web app in HTML, CSS and JavaScript.",
@@ -175,7 +187,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 18,
+         "id": 19,
          "name": "Text To Speech Converter",
          "url": "https://github.com/JackWorld99/Text-To-Speech-Converter",
          "description": "A technology that converts text to voice. It could be used to create a voiceover for a video or to help people with visual problems to “read” texts.",
@@ -183,7 +195,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 19,
+         "id": 20,
          "name": "Currency Converter",
          "url": "https://github.com/JackWorld99/Currency-Converter",
          "description": "A Currency Converter with HTML CSS and JavaScript. Swap or reverse the two currencies easily by clicking on the exchange icon.",
@@ -191,7 +203,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 20,
+         "id": 21,
          "name": "QR Code Generator",
          "url": "https://github.com/JackWorld99/QR-Code-Generator",
          "description": "Create a QR Code Generator with HTML CSS and JavaScript.",
@@ -199,7 +211,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 21,
+         "id": 22,
          "name": "File Downloader",
          "url": "https://github.com/JackWorld99/File-Downloader",
          "description": " Build a file downloader with JavaScript able download image or video.",
@@ -207,7 +219,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 22,
+         "id": 23,
          "name": "Canvas Clock",
          "url": "https://github.com/JackWorld99/Canvas-Clock",
          "description": "Build an analog clock using HTML Canvas.",
@@ -215,7 +227,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 23,
+         "id": 24,
          "name": "PWA Offline Travel Navigation App",
          "url": "https://github.com/JackWorld99/PWA-Offline-Travel-Navigation-App",
          "description": "This app aims to provide a platform for travelers who are willing to travel to the 'Taman Sutera Utama' area",
@@ -223,7 +235,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 24,
+         "id": 25,
          "name": "Snake Game",
          "url": "https://github.com/JackWorld99/Snake-Game",
          "description": "Build a simple snake game In JavaScript",
@@ -231,7 +243,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 25,
+         "id": 26,
          "name": "Realtime Crypto",
          "url": "https://github.com/JackWorld99/Realtime-Crypto",
          "description": "Using javascript to get cryptocurrencies, real-time prices, volumes, trading pairs, crypto categories and crypto derivatives, and rank them in order.",
@@ -239,7 +251,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 26,
+         "id": 27,
          "name": "Laravel Project Listing",
          "url": "https://github.com/JackWorld99/Laravel-Project-Listing",
          "description": "Laravel Project Listing",
@@ -247,7 +259,7 @@
          "category": "Laravel"
       },
       {
-         "id": 27,
+         "id": 28,
          "name": "Github Portfolio",
          "url": "https://github.com/JackWorld99/JackWorld99",
          "description": "It's something about me and what I'm currently doing",
@@ -255,7 +267,7 @@
          "category": "Others"
       },
       {
-         "id": 28,
+         "id": 29,
          "name": "Image Lazy Loading",
          "url": "https://github.com/JackWorld99/Image-Lazy-Loading",
          "description": "Lazy loading can occur on different moments in the application, but it typically happens on some user interactions such as scrolling and navigation.",
@@ -263,7 +275,7 @@
          "category": "Vanilla HTML"
       },
       {
-         "id": 29,
+         "id": 30,
          "name": "Pattern program",
          "url": "https://github.com/JackWorld99/Pattern-program",
          "description": "Patterns consisting of numbers, alphabets or symbols in a particular form. ",
