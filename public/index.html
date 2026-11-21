@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Jack Wong · Websites, apps &amp; AI assistants · Malaysia</title>
+  <meta name="description" content="I build websites, apps and AI assistants that answer your customers, cut busywork and bring in sales. Developer in Malaysia. English, 中文, Bahasa Melayu.">
+  <meta property="og:title" content="Jack Wong · Websites, apps & AI assistants">
+  <meta property="og:description" content="Tools that answer your customers, cut busywork and bring in sales. Developer in Malaysia.">
+  <meta property="og:image" content="https://wwj-portfolio.vercel.app/img/og.jpg">
+  <meta property="og:url" content="https://wwj-portfolio.vercel.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#05070f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/sora.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="spot" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Jack Wong, back to top">
+      <span class="brand__mark">JW</span><span class="brand__name">Jack Wong</span>
+    </a>
+    <nav class="nav__links" aria-label="Main">
+      <span class="nav__pill" aria-hidden="true"></span>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="btn btn--sm magnetic" href="mailto:jackwongportfolio520@gmail.com?subject=Project%20enquiry"><span>Email me</span></a>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__copy">
+        <p class="pill intro i1"><span class="pill__dot"></span>Open to freelance &amp; full-time roles</p>
+        <h1 class="hero__title intro i2" data-split>Websites, apps &amp; AI <span class="grad">that bring in sales.</span></h1>
+        <p class="hero__sub intro i3">I'm Jack, a developer in Malaysia. I build tools that answer your customers, cut the busywork and save you hours, explained in plain words.</p>
+        <div class="hero__ctas intro i4">
+          <a class="btn magnetic" href="mailto:jackwongportfolio520@gmail.com?subject=Project%20enquiry"><span>Email me</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost magnetic" href="#work"><span>See my work</span></a>
+        </div>
+        <ul class="hero__facts intro i5">
+          <li><span class="tick" aria-hidden="true"></span>English · 中文 · Bahasa Melayu</li>
+          <li><span class="tick" aria-hidden="true"></span>Based in Malaysia</li>
+        </ul>
+      </div>
+
+      <div class="hero__stage intro i3" id="stage" aria-label="Demo: an AI assistant answering a customer on WhatsApp">
+        <div class="orbit orbit--outer" aria-hidden="true"><i class="comet"></i></div>
+        <div class="orbit orbit--inner" aria-hidden="true"><i class="comet comet--cyan"></i></div>
+        <div class="glow" aria-hidden="true"></div>
+
+        <div class="phone-wrap">
+          <div class="phone" id="phone" data-ui>
+            <span class="phone__btn phone__btn--a" aria-hidden="true"></span>
+            <span class="phone__btn phone__btn--b" aria-hidden="true"></span>
+            <div class="phone__screen">
+              <div class="status" aria-hidden="true">
+                <span>9:41</span>
+                <span class="status__icons"><i class="sig"><b></b><b></b><b></b><b></b></i><i class="wifi"></i><i class="batt"></i></span>
+              </div>
+              <div class="phone__head">
+                <span class="phone__avatar" aria-hidden="true">SB</span>
+                <span class="phone__who"><b>Sunny Bakery</b><small id="presence"><span class="online"></span><span class="presence__text">AI assistant</span></small></span>
+                <span class="langs" role="group" aria-label="Customer's language">
+                  <button type="button" class="lang" data-lang="en" aria-pressed="true">EN</button>
+                  <button type="button" class="lang" data-lang="zh" aria-pressed="false">中文</button>
+                  <button type="button" class="lang" data-lang="ms" aria-pressed="false">BM</button>
+                </span>
+              </div>
+              <ol class="chat" id="chat" aria-live="polite">
+                <li class="day" aria-hidden="true">Today</li>
+                <li class="msg msg--in">Got pandan cake today?<span class="meta">9:41 <span class="ticks is-read">✓✓</span></span></li>
+                <li class="msg msg--out">Yes! Fresh pandan chiffon, RM 28 for a whole cake. Shall I keep one for you?<span class="meta">9:41</span></li>
+              </ol>
+              <div class="asks" id="asks" role="group" aria-label="Ask as a customer"></div>
+              <div class="composer" aria-hidden="true"><span class="composer__field">Message</span><span class="composer__send">➤</span></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="float f1" data-float="reply" aria-hidden="true"><span class="dot dot--green"></span>Replied in 2 sec</p>
+        <p class="float f2" data-float="lead" aria-hidden="true"><span class="dot dot--pink"></span>Serious buyer</p>
+        <p class="float f3" data-float="order" aria-hidden="true"><span class="dot dot--cyan"></span>Order sent to the shop</p>
+      </div>
+
+      <a class="scroll-hint intro i5" href="#services" aria-label="Scroll to services"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-label="What I work on">
+      <div class="marquee__row">
+        <div class="marquee__track">
+          <span>WhatsApp AI assistants</span><i>✦</i><span>Online shops</span><i>✦</i><span>Automation</span><i>✦</i><span>Admin systems</span><i>✦</i><span>Mobile &amp; desktop apps</span><i>✦</i><span>AI advice</span><i>✦</i>
+        </div>
+      </div>
+      <div class="marquee__row marquee__row--rev" aria-hidden="true">
+        <div class="marquee__track">
+          <span>English</span><i>✦</i><span>中文</span><i>✦</i><span>Bahasa Melayu</span><i>✦</i><span>Plain words</span><i>✦</i><span>Fast delivery</span><i>✦</i><span>Budget-friendly AI</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="At a glance">
+      <div class="stat" data-reveal><b><span class="count" data-to="24">24</span>/7</b><span>AI replies to your customers</span></div>
+      <div class="stat" data-reveal><b>Under <span class="count" data-to="2">2</span> weeks</b><span>to build and release my app Shuttle</span></div>
+      <div class="stat" data-reveal><b><span class="count" data-to="3">3</span> languages</b><span>English, 中文 and Bahasa Melayu</span></div>
+      <div class="stat" data-reveal><b>Since <span class="count" data-to="2020" data-from="2000">2020</span></b><span>building for real businesses</span></div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="section__head">
+        <p class="eyebrow" data-reveal><span></span>Services</p>
+        <h2 id="services-title" data-reveal>What I can build <span class="grad">for you</span></h2>
+        <p data-reveal>Tell me the problem. I'll pick the simplest thing that fixes it.</p>
+      </div>
+      <div class="bento">
+        <article class="card card--big" data-reveal>
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></div>
+          <h3>AI assistant on WhatsApp</h3>
+          <p>Answers customers 24/7, recommends products, takes orders and passes tricky chats to you. No more missed messages at midnight.</p>
+          <div class="mini" id="mini" aria-hidden="true">
+            <span class="mini__time">11:48 PM</span>
+            <span class="mini__in">Still open?</span>
+            <span class="mini__out">We're closed now, but I can take your order for tomorrow 🍰</span>
+            <span class="mini__in">2 boxes please</span>
+            <span class="mini__out">Done! Ready at 10am. See you ✨</span>
+          </div>
+        </article>
+        <article class="card" data-reveal>
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></div>
+          <h3>Website or online shop</h3>
+          <p>Fast on phones, so customers can browse and buy any time.</p>
+        </article>
+        <article class="card" data-reveal>
+          <div class="card__icon card__icon--spin" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg></div>
+          <h3>Automation</h3>
+          <p>Reports, data entry and research done for you. You just check and approve.</p>
+        </article>
+        <article class="card" data-reveal>
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></div>
+          <h3>Admin system</h3>
+          <p>Orders, stock and customers in one screen, not ten spreadsheets.</p>
+        </article>
+        <article class="card" data-reveal>
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
+          <h3>Mobile &amp; desktop apps</h3>
+          <p>Android, Windows and Mac, with updates that install themselves.</p>
+        </article>
+        <article class="card" data-reveal>
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.4 5.4L20 9l-4.2 3.8L17 19l-5-3-5 3 1.2-6.2L4 9l5.6-.6z"/></svg></div>
+          <h3>AI advice</h3>
+          <p>Which AI to use, what it costs, and what's actually worth it.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section__head">
+        <p class="eyebrow" data-reveal><span></span>Work</p>
+        <h2 id="work-title" data-reveal>Real <span class="grad">results</span></h2>
+        <p data-reveal>Things I've built and shipped, not just demos.</p>
+      </div>
+
+      <article class="work" data-reveal>
+        <div class="work__visual tilt" data-ui aria-hidden="true">
+          <div class="ui ui--chat play-target">
+            <div class="ui__bar"><span class="live"><i></i>Live</span><span>WhatsApp · Messenger</span></div>
+            <div class="ui__row ui__row--in s1">Do you have this in size M?</div>
+            <div class="ui__row ui__row--out s2">Yes, 3 left in M. Want me to reserve one and send the payment link?</div>
+            <div class="ui__row ui__row--in s3">Yes please!</div>
+            <div class="ui__tags s4"><span class="tag tag--pink">Serious buyer · 92%</span><span class="tag tag--cyan">Order placed</span><span class="tag">Handed to staff</span></div>
+          </div>
+        </div>
+        <div class="work__text">
+          <p class="work__meta">Live for an online store</p>
+          <h3>AI salesperson</h3>
+          <p>Chats with shoppers on WhatsApp and Messenger day and night. It recommends products, spots serious buyers, places orders, and hands the chat to a real person when needed.</p>
+          <ul class="work__points"><li>Replies in seconds, any hour</li><li>Answers from the real product list</li><li>Passes tricky chats to staff</li></ul>
+        </div>
+      </article>
+
+      <article class="work work--flip" data-reveal>
+        <div class="work__visual tilt" data-ui aria-hidden="true">
+          <div class="ui ui--send play-target">
+            <div class="send__devices"><span class="dev">📱 Phone</span><span class="send__beam"></span><span class="dev">💻 Laptop</span></div>
+            <p class="send__big"><span class="count-ui" data-to="24">0</span> photos sent</p>
+            <p class="send__sub">Full quality · no cable · no upload</p>
+            <div class="send__bar"><span></span></div>
+            <ul class="send__files">
+              <li class="s1"><span>IMG_2041.jpg</span><span>4.2 MB <b>✓</b></span></li>
+              <li class="s2"><span>IMG_2042.jpg</span><span>3.9 MB <b>✓</b></span></li>
+              <li class="s3"><span>Invoice-November.pdf</span><span>180 KB <b>✓</b></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="work__text">
+          <p class="work__meta">Free app · Android, Windows, Mac</p>
+          <h3>Shuttle</h3>
+          <p>Send photos, files and text between your phone and computer at full quality. Pair once with a QR code, then just tap send. Built and released for three platforms in under two weeks.</p>
+          <a class="link" href="https://github.com/JackWorld99/shuttle-releases/releases/latest">Download Shuttle <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="work" data-reveal>
+        <div class="work__visual tilt" data-ui aria-hidden="true">
+          <div class="ui ui--memo play-target">
+            <p class="memo__topic">Meeting: sell on a marketplace too?</p>
+            <div class="memo__row s1"><span class="who who--v"><i>R</i>Research</span><span>Found 3 similar shops and their prices.</span></div>
+            <div class="memo__row s2"><span class="who who--c"><i>F</i>Finance</span><span>Fees take about a fifth of each sale.</span></div>
+            <div class="memo__row s3"><span class="who who--p"><i>!</i>Risk</span><span>Start with the 10 best sellers.</span></div>
+            <div class="memo__ok s4"><span>Waiting for your OK</span><span class="memo__btn">Approve</span></div>
+          </div>
+        </div>
+        <div class="work__text">
+          <p class="work__meta">My own experiment</p>
+          <h3>An AI team that holds meetings</h3>
+          <p>AI "staff" for research, content, finance and risk discuss a question, check sources and hand me one short report. Nothing happens until a person says yes.</p>
+        </div>
+      </article>
+
+      <article class="work work--flip" data-reveal>
+        <div class="work__visual tilt" data-ui aria-hidden="true">
+          <div class="ui ui--radar play-target">
+            <p class="radar__title">Which AI for which job?</p>
+            <div class="radar__row s1"><span>Reply to customers</span><span class="bar"><i class="w90"></i></span><span class="tag tag--cyan">Free</span></div>
+            <div class="radar__row s2"><span>Write product posts</span><span class="bar"><i class="w75"></i></span><span class="tag tag--cyan">Free</span></div>
+            <div class="radar__row s3"><span>Read receipts</span><span class="bar"><i class="w60"></i></span><span class="tag">Cents a page</span></div>
+            <div class="radar__row s4"><span>Private data</span><span class="bar"><i class="w80"></i></span><span class="tag tag--pink">On your PC</span></div>
+          </div>
+        </div>
+        <div class="work__text">
+          <p class="work__meta">Free tool</p>
+          <h3>Model Radar</h3>
+          <p>New AI models come out every week. Model Radar compares them side by side and picks the cheapest one that's good enough, so your AI bill stays small.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="section__head">
+        <p class="eyebrow" data-reveal><span></span>Process</p>
+        <h2 id="process-title" data-reveal>How we <span class="grad">work together</span></h2>
+        <p data-reveal>No jargon, no surprises. You see progress from the first week.</p>
+      </div>
+      <ol class="steps" id="steps">
+        <li class="step" data-reveal><span class="step__n">1</span><h3>Tell me the problem</h3><p>By email or a quick call. What's slowing you down?</p></li>
+        <li class="step" data-reveal><span class="step__n">2</span><h3>Get a plan &amp; price</h3><p>In plain words, before any work starts.</p></li>
+        <li class="step" data-reveal><span class="step__n">3</span><h3>Watch it being built</h3><p>You try it with real work and I adjust.</p></li>
+        <li class="step" data-reveal><span class="step__n">4</span><h3>Launch together</h3><p>I set it up with you and make sure it works.</p></li>
+      </ol>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="about__face" data-reveal>
+        <img src="img/jack.webp" width="240" height="240" alt="Illustrated portrait of Jack Wong" loading="lazy">
+        <span class="about__wave" aria-hidden="true">👋</span>
+      </div>
+      <div class="about__text">
+        <p class="eyebrow" data-reveal><span></span>About</p>
+        <h2 id="about-title" data-reveal>Hi, I'm <span class="grad">Jack</span></h2>
+        <p data-reveal>By day I build the systems behind a growing online store, including the AI salesperson that chats with its customers. In my own time I make apps like Shuttle.</p>
+        <p data-reveal>I studied Software Engineering at UTAR and have built for businesses since 2020. If something can be done simply, I do it simply.</p>
+        <ul class="chips" data-reveal>
+          <li>🎓 Software Engineering, UTAR</li>
+          <li>💼 Full-time developer</li>
+          <li>🗣️ English · 中文 · BM</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact" aria-labelledby="contact-title" data-reveal>
+      <div class="cta__inner">
+        <h2 id="contact-title">What's slowing your <span class="grad">business down?</span></h2>
+        <p>Tell me in a few lines. I'll tell you honestly if a website, an app or AI can fix it.</p>
+        <div class="cta__actions">
+          <a class="btn btn--lg magnetic" href="mailto:jackwongportfolio520@gmail.com?subject=Project%20enquiry&amp;body=Hi%20Jack%2C%0A%0AMy%20business%3A%20%0AWhat%20is%20slowing%20us%20down%3A%20%0A"><span>Email me</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <button type="button" class="btn btn--ghost btn--lg magnetic" id="copy" data-email="jackwongportfolio520@gmail.com"><span>Copy email</span></button>
+        </div>
+        <p class="cta__mail">jackwongportfolio520@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p class="foot__big" aria-hidden="true">Let's build something.</p>
+    <div class="foot__row">
+      <span>© 2026 Jack Wong · Malaysia</span>
+      <span class="foot__links">
+        <a href="https://github.com/JackWorld99">GitHub</a>
+        <a href="https://github.com/JackWorld99/shuttle-releases/releases/latest">Shuttle</a>
+        <a href="mailto:jackwongportfolio520@gmail.com">Email</a>
+        <a href="#top">Back to top ↑</a>
+      </span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
